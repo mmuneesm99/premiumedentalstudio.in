@@ -43,7 +43,7 @@ export default {
     data() {
         return {
             isFlipped: [],
-            baseUrl: 'https://mmuneesm99.github.io/premiumedentalstudio.in/',
+            baseUrl: 'https://mmuneesm99.github.io/imagecloude/',
             doctors: [
                 { name: "Dr. SUHA SUNAYYA K.F", image: "doctor1.jpg", specialty: "Specialist in Root Canal Treatment with over 10 years of experience." },
                 { name: "Dr. SUHA SUNAYYA K.F", image: "doctor1.jpg", specialty: "Specialist in Cosmetic Dentistry with over 8 years of experience." },

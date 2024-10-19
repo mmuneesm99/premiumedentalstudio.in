@@ -56,7 +56,7 @@
 export default {
     data() {
         return {
-            baseUrl: 'https://mmuneesm99.github.io/premiumedentalstudio.in/',
+            baseUrl: 'https://mmuneesm99.github.io/imagecloude/',
         };
     },
     methods: {
