@@ -56,7 +56,7 @@
 export default {
     data() {
         return {
-            baseUrl: 'http://localhost:5173/',
+            baseUrl: 'https://mmuneesm99.github.io/premiumedentalstudio.in/',
         };
     },
     methods: {
