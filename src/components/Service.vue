@@ -56,6 +56,7 @@
 </template>
 
 <script>
+
 export default {
     mounted() {
         // Initialize Swiper when the component is mounted
