@@ -1,8 +1,8 @@
 <template>
-    <section class="max-w-screen-xl h-auto flex flex-col mt-12 mx-auto">
+    <section id="services" class="max-w-screen-xl h-auto flex flex-col py-6 mx-auto">
         <div class="">
             <!-- Section Title -->
-            <h2 class="text-[#004443] font-bold text-3xl mb-8">How We Care for Your Smile</h2>
+            <h2 class="text-[#004443] font-bold text-3xl px-4 md:px-0  mb-6">How We Care for Your Smile</h2>
 
             <!-- Swiper Container -->
             <div class="swiper-container mySwiper py-10 relative overflow-hidden">

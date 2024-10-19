@@ -1,9 +1,9 @@
 <template>
-    <section class="max-w-screen-xl min-h-screen flex flex-col mt-12 mx-auto">
+    <section id="doctors" class="max-w-screen-xl h-auto flex flex-col py-6 mx-auto">
         <div>
-            <h2 class="text-[#004443] font-bold text-center text-3xl mb-8">The Experts Behind Every Smile</h2>
-            <div class="bg-[#00AEAA] p-5 grid grid-cols-1 lg:grid-cols-3 gap-6 rounded-3xl">
-                <img src="../assets/img/drkasim.jpg" class="object-cover rounded-3xl w-full lg:max-w-sm h-[470px]" alt="Dr. Sayyid Kasim V" />
+            <h2 class="text-[#004443] font-bold text-center text-3xl px-4 mb-8">The Experts Behind Every Smile</h2>
+            <div class="bg-[#00AEAA] p-5 grid grid-cols-1 lg:grid-cols-3 space-x-0 md:space-x-6 space-y-4 md:space-y-0 mb-5 md:mb-0 rounded-3xl">
+                <img src="../assets/img/drkasim.jpg" class="object-cover rounded-3xl mx-auto w-full  lg:max-w-sm h-[470px]" alt="Dr. Sayyid Kasim V" />
                 <div class="col-span-2 flex flex-col justify-center space-y-5 text-[#FFF9F2]">
                     <h3 class="text-4xl">Dr. Sayyid Kasim V</h3>
                     <hr>

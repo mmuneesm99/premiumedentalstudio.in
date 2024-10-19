@@ -7,5 +7,6 @@
     background: #FFF9F2;
     --swiper-pagination-color: #00AEAA; 
     --swiper-pagination-bullet-opacity: 1; 
-    --swiper-pagination-bullet-border-radius:2px
+    --swiper-pagination-bullet-border-radius:2px;
+    scroll-behavior: smooth;
 }

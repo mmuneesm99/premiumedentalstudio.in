@@ -7,6 +7,7 @@
   <Team/>
   <Testimony/>
   <Gallery/>
+  <Footer/>
 </template>
 <script>
 import { nextTick } from 'vue';
@@ -30,9 +31,10 @@ import Service from './components/Service.vue';
 import Team from './components/Team.vue';
 import Testimony from './components/Testimony.vue';
 import Gallery from './components/Gallery.vue';
+import Footer from './components/Footer.vue';
 
 export default {
-  components: { Header, AboutUS, Navbar, Service, Team, Testimony, Gallery },
+  components: { Header, AboutUS, Navbar, Service, Team, Testimony, Gallery, Footer },
   mounted() {
     
     nextTick(() => {

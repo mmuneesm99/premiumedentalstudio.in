@@ -1,7 +1,7 @@
 <template>
-    <section class="max-w-screen-xl min-h-screen my-12 mx-auto">
+    <section id="testimonial" class="max-w-screen-xl h-auto my-12 px-4 mx-auto">
         <div>
-            <h2 class="text-[#004443] font-bold text-3xl mb-16">Smiles That Speak</h2>
+            <h2 class="text-[#004443] font-bold text-3xl mb-16 text-center md:text-left">Smiles That Speak</h2>
             <div class="grid  grid-cols-1 md:grid-cols-3 gap-5">
                 <div class="md:col-span-2 col-span-1 rounded-3xl">
                     <img src="../assets/img/testimony.jpg" class=" w-full" alt="Dr. Sayyid Kasim V" />
