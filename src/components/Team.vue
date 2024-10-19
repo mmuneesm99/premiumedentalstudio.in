@@ -103,7 +103,7 @@ export default {
             console.log(this.isFlipped); // Log current state of isFlipped
         },
         getImageUrl(imageName) {
-            return `${this.baseUrl}src/assets/img/${imageName}`;
+            return `${this.baseUrl}${imageName}`;
         },
         startAutoFlip() {
             this.interval = setInterval(() => {
