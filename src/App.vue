@@ -1,13 +1,14 @@
 <template>
-    <Navbar />
+  <Navbar />
 
   <Header />
-  <AboutUS/>
-  <Service/>
-  <Team/>
-  <Testimony/>
-  <Gallery/>
-  <Footer/>
+  <AboutUS />
+  <Service />
+  <Team />
+  <Testimony />
+  <Gallery />
+  <ContactUs />
+  <Footer />
 </template>
 <script>
 import { nextTick } from 'vue';
@@ -32,11 +33,12 @@ import Team from './components/Team.vue';
 import Testimony from './components/Testimony.vue';
 import Gallery from './components/Gallery.vue';
 import Footer from './components/Footer.vue';
+import ContactUs from './components/ContactUs.vue';
 
 export default {
-  components: { Header, AboutUS, Navbar, Service, Team, Testimony, Gallery, Footer },
+  components: { Header, AboutUS, Navbar, Service, Team, Testimony, Gallery, ContactUs, Footer },
   mounted() {
-    
+
     nextTick(() => {
       initAccordions();
       initCarousels();

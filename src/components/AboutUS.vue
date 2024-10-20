@@ -6,7 +6,7 @@
                 <h2 class="text-[#004443] font-semibold text-3xl text-center md:text-left mb-8">About Us</h2>
 
                 <!-- Commitment Title -->
-                <h3 class="text-[#00AEAA] text-center md:text-left font-bold ml-0 md:ml-5 text-2xl md:text-5xl mb-8">
+                <h3 class="text-[#00AEAA] text-center md:text-left font-bold ml-0 md:ml-5 text-2xl md:text-4xl mb-8">
                     OUR COMMITMENT TO <br />
                     EXCEPTIONAL DENTAL CARE
                 </h3>
@@ -15,7 +15,7 @@
                         class="rounded-3xl -mb-14  shadow-md w-full object-cover" />
                 </div>
                 <div
-                    class="grid md:bg-transparent bg-[#00AEAA] px-4 pt-16 rounded-t-3xl md:rounded-none md:px-0 lg:grid-cols-3 gap-8 relative z-10">
+                    class="grid md:bg-transparent bg-[#00AEAA] px-4 pt-20 md:pt-0  rounded-t-3xl md:rounded-none md:px-0 lg:grid-cols-3 gap-8 relative z-10">
                     <!-- Image Section -->
                     <div class="ml-0 md:ml-5 col-span-2 rounded-3xl hidden md:block">
                         <img src="../assets/img/about-image-1.jpg" alt="Dental Clinic"
@@ -23,7 +23,7 @@
                     </div>
 
                     <!-- Text Section -->
-                    <div class="flex text-[#FFF9F2] md:text-[#00AEAA] flex-col text-xl justify-start">
+                    <div class="flex text-[#FFF9F2] md:text-[#00AEAA] flex-col text-base md:text-xl justify-start">
                         <p class="mb-4">
                             At Premium Dental Studio, we blend cutting-edge technology with personalized care to offer a
                             top-tier dental experience. Our expert team provides a full range of services, from routine
@@ -38,21 +38,21 @@
 
                 <!-- Mission and Vision Section -->
                 <div
-                    class=" relative grid grid-cols-1 md:grid-cols-3 gap-8 mt-0  md:-mt-36 bg-[#00AEAA] p-4 rounded-b-3xl md:rounded-3xl ">
+                    class=" relative grid grid-cols-1 md:grid-cols-3 gap-6 mt-0  md:-mt-36 bg-[#00AEAA] px-3 md:px-8 py-8 rounded-b-3xl md:rounded-3xl ">
                     <!-- Mission -->
-                    <div class="relative">
+                    <div class="relative md:order-1 order-1">
                         <div class="text-left relative md:absolute bottom-0">
                             <h4 class="text-white font-semibold text-2xl mb-4">OUR MISSION</h4>
-                            <p class="text-white text-lg">
+                            <p class="text-white text-base md:text-lg">
                                 To provide personalized, premium-quality dental care that enhances both your smile and
                                 your well-being.
                             </p>
                         </div>
                     </div>
-                    <div class="relative md:order-3 order-2 ">
+                    <div class="relative md:order-2 order-3 ">
                         <div class="text-left relative md:absolute bottom-0">
                             <h4 class="text-white font-semibold text-2xl mb-4">OUR VISION</h4>
-                            <p class="text-white text-lg">
+                            <p class="text-white text-base md:text-lg">
                                 To be recognized as a leading dental practice known for exceptional care, innovation,
                                 and a patient-first approach.
                             </p>
@@ -60,7 +60,7 @@
                     </div>
                     <div class="md:order-3 order-2">
                         <img src="../assets/img/about-image-2.jpg" alt="Mission Image"
-                            class="rounded-3xl shadow-md mb-4 w-full object-cover" />
+                            class="rounded-3xl shadow-md  w-full object-cover" />
                     </div>
                 </div>
             </div>

@@ -2,7 +2,7 @@
   <nav class="bg-white fixed top-0 w-screen z-50 border-gray-200 dark:bg-gray-900 dark:border-gray-700">
     <div class="max-w-screen-xl border-b border-black flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="../assets/img/logo.png" class="h-16" alt="Flowbite Logo" />
+        <img src="../assets/img/logo.png" class="h-10 md:h-16" alt="Flowbite Logo" />
         <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Premiumdentalstudio</span> -->
       </a>
       <button data-collapse-toggle="navbar-multi-level" type="button"
@@ -46,7 +46,7 @@
         </ul>
       </div>
       <div class="hidden md:block">
-        <button class="border border-black rounded-full px-5 py-1">Contact Us</button>
+        <a href="#contact-us" class="border border-black rounded-full pl-5 pr-1 py-1 flex items-center">Contact Us <i class="bx ml-2 bg-[#004443] rounded-full px-1 py-1 text-[#FFF9F2] bx-phone"></i></a>
       </div>
     </div>
   </nav>

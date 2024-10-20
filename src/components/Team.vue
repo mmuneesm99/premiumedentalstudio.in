@@ -1,16 +1,16 @@
 <template>
     <section id="doctors" class="max-w-screen-xl h-auto flex flex-col py-6 mx-auto">
         <div>
-            <h2 class="text-[#004443] font-bold text-center text-3xl px-4 mb-8">The Experts Behind Every Smile</h2>
+            <h2 class="text-[#004443] font-bold text-center text-3xl px-4 mb-16">The Experts Behind Every Smile</h2>
             <div class="bg-[#00AEAA] p-5 grid grid-cols-1 lg:grid-cols-3 space-x-0 md:space-x-6 space-y-4 md:space-y-0 mb-5 md:mb-0 rounded-3xl">
                 <img src="../assets/img/drkasim.jpg" class="object-cover rounded-3xl mx-auto w-full  lg:max-w-sm h-[470px]" alt="Dr. Sayyid Kasim V" />
                 <div class="col-span-2 flex flex-col justify-center space-y-5 text-[#FFF9F2]">
-                    <h3 class="text-4xl">Dr. Sayyid Kasim V</h3>
+                    <h3 class="text-2xl md:text-4xl">Dr. Sayyid Kasim V</h3>
                     <hr>
-                    <p class="font-semibold text-xl">Founder, Premium Dental Studio</p>
-                    <p class="text-xl max-w-lg">BDS, FMC(GER), DIMP Chief Dental Surgeon | Facial Cosmetologist | Sports Dentistry Specialist</p>
+                    <p class="font-semibold text-lg md:text-xl">Founder, Premium Dental Studio</p>
+                    <p class="text-base md:text-xl max-w-lg">BDS, FMC(GER), DIMP Chief Dental Surgeon | Facial Cosmetologist | Sports Dentistry Specialist</p>
                     <button class="border rounded-full px-5 w-fit py-2 border-[#014441]">About Dr. Sayyid Kasim</button>
-                    <p class="text-xl">Dr. Sayyid Kasim V., founder of Premium Dental Studio, is a highly skilled Chief Dental Surgeon with expertise in facial cosmetology and sports dentistry. With advanced qualifications in dental care, Dr. Kasim is dedicated to providing personalized treatments that prioritize patient health and create beautiful, lasting smiles.</p>
+                    <p class="text-base md:text-xl">Dr. Sayyid Kasim V., founder of Premium Dental Studio, is a highly skilled Chief Dental Surgeon with expertise in facial cosmetology and sports dentistry. With advanced qualifications in dental care, Dr. Kasim is dedicated to providing personalized treatments that prioritize patient health and create beautiful, lasting smiles.</p>
                 </div>
             </div>
 
@@ -19,13 +19,14 @@
                     <div v-for="(doctor, index) in doctors" :key="index" class="swiper-slide flex justify-start" @click="toggleFlip(index)">
                         <div class="" :class="['flip-card', isFlipped[index] ? 'flipped ' : '', 'bg-transparent', 'flex', 'flex-col', 'items-start', 'w-[300px]']">
                             <div class="flip-card-inner rounded-3xl">
-                                <div class="flip-card-front bg-white  shadow-md relative overflow-hidden">
+                                <div class="flip-card-front bg-white p-2 shadow-md relative overflow-hidden">
                                     <img :src="getImageUrl(doctor.image)" :alt="doctor.name" class="rounded-3xl mb-4" />
                                     <h3 class="text-[#00AEAA] font-semibold px-3 pb-4 text-lg">{{ doctor.name }}</h3>
                                 </div>
                                 <div class="flip-card-back bg-[#00AEAA] text-white p-4 rounded-3xl">
-                                    <h3 class="font-semibold mb-2">{{ doctor.name }}</h3>
-                                    <p>{{ doctor.specialty }}</p>
+                                    <h3 class="font-semibold text-xl mb-2">{{ doctor.name }}</h3>
+                                    <hr>
+                                    <p class="py-3">{{ doctor.specialty }}</p>
                                 </div>
                             </div>
                         </div>

@@ -12,9 +12,8 @@
                         <img src="../assets/img/avatar.svg" class="h-24 mr-5" alt="Dr. Sayyid Kasim V" />
                     </div>
                     <div class="flex-col justify-center space-y-5 text-[#FFF9F2]">
-                        <h3 class="text-xl">Dr. Sayyid Kasim V</h3>
-                        <p class="text-lg max-w-lg">BDS, FMC(GER), DIMP Chief Dental Surgeon | Facial Cosmetologist |
-                            Sports Dentistry Specialist</p>
+                        <h3 class="md:text-xl text-lg">Jafar sadhik</h3>
+                        <p class="md:text-lg text-base italic max-w-lg">"Dr. Kasim and his staff are amazing! They explained every step of my treatment, and the results are perfect."</p>
                     </div>
                 </div>
                 <div class="bg-[#004443] p-5 grid grid-rows-2 rounded-3xl">
@@ -22,9 +21,8 @@
                         <img src="../assets/img/avatar.svg" class="h-24 mr-5" alt="Dr. Sayyid Kasim V" />
                     </div>
                     <div class="flex-col justify-center space-y-5 text-[#FFF9F2]">
-                        <h3 class="text-xl">Dr. Sayyid Kasim V</h3>
-                        <p class="text-lg max-w-lg">BDS, FMC(GER), DIMP Chief Dental Surgeon | Facial Cosmetologist |
-                            Sports Dentistry Specialist</p>
+                        <h3 class="md:text-xl text-lg">Mustafa</h3>
+                        <p class="md:text-lg italic text-base max-w-lg">"The care and attention I received were outstanding. I trust Premium Dental Studio with all my dental needs."</p>
                     </div>
                 </div>
                 <div class="bg-[#00AEAA] p-5 grid grid-rows-2 rounded-3xl">
@@ -32,9 +30,8 @@
                         <img src="../assets/img/avatar.svg" class="h-24 mr-5" alt="Dr. Sayyid Kasim V" />
                     </div>
                     <div class="flex-col justify-center space-y-5 text-[#FFF9F2]">
-                        <h3 class="text-xl">Dr. Sayyid Kasim V</h3>
-                        <p class="text-lg max-w-lg">BDS, FMC(GER), DIMP Chief Dental Surgeon | Facial Cosmetologist |
-                            Sports Dentistry Specialist</p>
+                        <h3 class="md:text-xl text-lg">Sahad</h3>
+                        <p class="md:text-lg text-base max-w-lg italic">"From booking the appointment to the treatment, everything was smooth and professional. Highly recommend!""</p>
                     </div>
                 </div>
                 <div class="bg-[#004443] p-5 grid grid-rows-2 rounded-3xl">
@@ -42,9 +39,8 @@
                         <img src="../assets/img/avatar.svg" class="h-24 mr-5" alt="Dr. Sayyid Kasim V" />
                     </div>
                     <div class="flex-col justify-center space-y-5 text-[#FFF9F2]">
-                        <h3 class="text-xl">Dr. Sayyid Kasim V</h3>
-                        <p class="text-lg max-w-lg">BDS, FMC(GER), DIMP Chief Dental Surgeon | Facial Cosmetologist |
-                            Sports Dentistry Specialist</p>
+                        <h3 class="md:text-xl text-lg">Munees</h3>
+                        <p class="md:text-lg text-base max-w-lg italic">"The care and attention I received were outstanding. I trust Premium Dental Studio with all my dental needs."</p>
                     </div>
                 </div>
             </div>

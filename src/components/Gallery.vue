@@ -1,7 +1,7 @@
 <template>
     <section id="gallery" class="max-w-screen-xl h-auto flex flex-col px-4 py-6 mx-auto">
         <div>
-            <h2 class="text-[#004443] font-bold text-center text-3xl mb-8">The Experts Behind Every Smile</h2>
+            <h2 class="text-[#004443] font-bold text-center text-3xl mb-8">Our gallery</h2>
 
             <div class="swiper-container mySwiperGallery py-10 relative overflow-hidden">
                 <div class="swiper-wrapper h-full max-h-[600px]">

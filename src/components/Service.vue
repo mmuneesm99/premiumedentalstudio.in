@@ -2,14 +2,14 @@
     <section id="services" class="max-w-screen-xl h-auto flex flex-col py-6 mx-auto">
         <div class="">
             <!-- Section Title -->
-            <h2 class="text-[#004443] font-bold text-3xl px-4 md:px-0  mb-6">How We Care for Your Smile</h2>
+            <h2 class="text-[#004443] font-bold  text-center md:text-left text-3xl px-4 md:px-0  mb-6">How We Care for Your Smile</h2>
 
             <!-- Swiper Container -->
             <div class="swiper-container mySwiper py-10 relative overflow-hidden">
                 <div class="swiper-wrapper">
                     <!-- Slide 1 -->
                     <div class="swiper-slide flex justify-start">
-                        <div class="bg-white rounded-3xl shadow-md flex flex-col items-start w-[300px]">
+                        <div class="bg-white border border-[#00444385] overflow-hidden relative rounded-3xl  flex flex-col items-start w-[300px]">
                             <img src="../assets/img/rootcanal.jpg" alt="Root Canal Treatment" class="rounded-t-lg mb-4" />
                             <h3 class="text-[#00AEAA] font-semibold px-3 pb-4 text-lg">Root Canal<br/>Treatment</h3>
                         </div>
@@ -17,23 +17,23 @@
 
                     <!-- Slide 2 -->
                     <div class="swiper-slide flex justify-start">
-                        <div class="bg-white rounded-3xl shadow-md flex flex-col items-start w-[300px]">
-                            <img src="../assets/img/rootcanal.jpg" alt="Clear Aligner" class="rounded-t-lg mb-4" />
+                        <div class="bg-white  border border-[#00444385] overflow-hidden relative rounded-3xl  flex flex-col items-start w-[300px]">
+                            <img src="../assets/img/clear.jpg" alt="Clear Aligner" class="rounded-t-lg mb-4" />
                             <h3 class="text-[#00AEAA] font-semibold px-3 pb-4 text-lg">Clear<br/>Aligner</h3>
                         </div>
                     </div>
 
                     <!-- Slide 3 -->
                     <div class="swiper-slide flex justify-start">
-                        <div class="bg-white rounded-3xl shadow-md flex flex-col items-start w-[300px]">
-                            <img src="../assets/img/rootcanal.jpg" alt="Sports Dentistry" class="rounded-t-lg mb-4" />
+                        <div class="bg-white border border-[#00444385] overflow-hidden relative rounded-3xl  flex flex-col items-start w-[300px]">
+                            <img src="../assets/img/sports.jpg" alt="Sports Dentistry" class="rounded-t-lg mb-4" />
                             <h3 class="text-[#00AEAA] font-semibold px-3 pb-4 text-lg">Sports<br/>Dentistry</h3>
                         </div>
                     </div>
 
                     <!-- Slide 4 -->
                     <div class="swiper-slide flex justify-start">
-                        <div class="bg-white rounded-3xl shadow-md flex flex-col items-start w-[300px]">
+                        <div class="bg-white border border-[#00444385] overflow-hidden relative rounded-3xl  flex flex-col items-start w-[300px]">
                             <img src="../assets/img/rootcanal.jpg" alt="Teeth Whitening" class="rounded-t-lg mb-4" />
                             <h3 class="text-[#00AEAA] font-semibold px-3 pb-4 text-lg">Teeth<br/>Whitening</h3>
                         </div>
@@ -41,8 +41,8 @@
 
                     <!-- Slide 5 -->
                     <div class="swiper-slide flex justify-start">
-                        <div class="bg-white rounded-3xl shadow-md flex flex-col items-start w-[300px]">
-                            <img src="../assets/img/rootcanal.jpg" alt="Dental Implants" class="rounded-t-lg mb-4" />
+                        <div class="bg-white border border-[#00444385] overflow-hidden relative rounded-3xl   flex flex-col items-start w-[300px]">
+                            <img src="../assets/img/sports.jpg" alt="Dental Implants" class="rounded-t-lg mb-4" />
                             <h3 class="text-[#00AEAA] font-semibold px-3 pb-4 text-lg">Dental<br/>Implants</h3>
                         </div>
                     </div>
