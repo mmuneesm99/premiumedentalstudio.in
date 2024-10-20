@@ -42,7 +42,7 @@
                     <!-- Mission -->
                     <div class="relative md:order-1 order-1">
                         <div class="text-left relative md:absolute bottom-0">
-                            <h4 class="text-white font-semibold text-2xl mb-4">OUR MISSION</h4>
+                            <h4 class="text-white font-semibold text-xl md:text-2xl mb-4">OUR MISSION</h4>
                             <p class="text-white text-base md:text-lg">
                                 To provide personalized, premium-quality dental care that enhances both your smile and
                                 your well-being.
@@ -51,7 +51,7 @@
                     </div>
                     <div class="relative md:order-2 order-3 ">
                         <div class="text-left relative md:absolute bottom-0">
-                            <h4 class="text-white font-semibold text-2xl mb-4">OUR VISION</h4>
+                            <h4 class="text-white font-semibold text-xl md:text-2xl mb-4">OUR VISION</h4>
                             <p class="text-white text-base md:text-lg">
                                 To be recognized as a leading dental practice known for exceptional care, innovation,
                                 and a patient-first approach.
