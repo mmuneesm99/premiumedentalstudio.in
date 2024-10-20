@@ -4,12 +4,12 @@
             <h2 class="text-[#004443] font-bold text-3xl mb-16 text-center md:text-left">Smiles That Speak</h2>
             <div class="grid  grid-cols-1 md:grid-cols-3 gap-5">
                 <div class="md:col-span-2 col-span-1 rounded-[36px] relative overflow-hidden">
-                    <img src="../assets/img/testimony.jpg" class="max-h-[305px] object-cover h-full w-full" alt="Dr. Sayyid Kasim V" />
+                    <img loading="lazy" src="../assets/img/testimony.jpg" class="max-h-[305px] object-cover h-full w-full" alt="Dr. Sayyid Kasim V" />
 
                 </div>
                 <div class="bg-[#00AEAA] p-5 grid grid-rows-2 rounded-[36px]">
                     <div class="w-fill flex justify-end">
-                        <img src="../assets/img/avatar.svg" class="h-24 mr-5" alt="Dr. Sayyid Kasim V" />
+                        <img loading="lazy" src="../assets/img/avatar.svg" class="h-24 mr-5" alt="Dr. Sayyid Kasim V" />
                     </div>
                     <div class="flex-col justify-center space-y-5 text-[#FFF9F2]">
                         <h3 class="md:text-xl text-lg">Jafar sadhik</h3>
@@ -18,7 +18,7 @@
                 </div>
                 <div class="bg-[#004443] p-5 grid grid-rows-2 rounded-[36px]">
                     <div class="w-fill flex justify-end">
-                        <img src="../assets/img/avatar.svg" class="h-20 mr-5" alt="Dr. Sayyid Kasim V" />
+                        <img loading="lazy" src="../assets/img/avatar.svg" class="h-20 mr-5" alt="Dr. Sayyid Kasim V" />
                     </div>
                     <div class="flex-col justify-center space-y-5 text-[#FFF9F2]">
                         <h3 class="md:text-xl text-lg">Mustafa</h3>
@@ -27,7 +27,7 @@
                 </div>
                 <div class="bg-[#00AEAA] p-5 grid grid-rows-2 rounded-[36px]">
                     <div class="w-fill flex justify-end">
-                        <img src="../assets/img/avatar.svg" class="h-24 mr-5" alt="Dr. Sayyid Kasim V" />
+                        <img loading="lazy" src="../assets/img/avatar.svg" class="h-24 mr-5" alt="Dr. Sayyid Kasim V" />
                     </div>
                     <div class="flex-col justify-center space-y-5 text-[#FFF9F2]">
                         <h3 class="md:text-xl text-lg">Sahad</h3>
@@ -36,7 +36,7 @@
                 </div>
                 <div class="bg-[#004443] p-5 grid grid-rows-2 rounded-[36px]">
                     <div class="w-fill flex justify-end">
-                        <img src="../assets/img/avatar.svg" class="h-24 mr-5" alt="Dr. Sayyid Kasim V" />
+                        <img loading="lazy" src="../assets/img/avatar.svg" class="h-24 mr-5" alt="Dr. Sayyid Kasim V" />
                     </div>
                     <div class="flex-col justify-center space-y-5 text-[#FFF9F2]">
                         <h3 class="md:text-xl text-lg">Munees</h3>
