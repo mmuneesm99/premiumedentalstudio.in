@@ -57,7 +57,7 @@ export default {
     },
     methods: {
         getImageUrl(imageName) {
-            return `${this.baseUrl}src/assets/img/${imageName}`;
+            return `${this.baseUrl}${imageName}`;
         },
     },
 };
