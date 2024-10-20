@@ -14,7 +14,7 @@
                 </div>
             </div>
 
-            <div class="swiper-container mySwiperTeam py-10 relative overflow-hidden">
+            <div class="swiper-container mySwiperTeam py-10 pl-4 md:pl-0 relative overflow-hidden">
                 <div class="swiper-wrapper h-[380px]">
                     <div v-for="(doctor, index) in doctors" :key="index" class="swiper-slide flex justify-start" @click="toggleFlip(index)">
                         <div class="" :class="['flip-card', isFlipped[index] ? 'flipped ' : '', 'bg-transparent', 'flex', 'flex-col', 'items-start', 'w-[300px]']">
@@ -67,10 +67,10 @@ export default {
             spaceBetween: -50,
             loop: true,
             autoplay: {
-                delay: 7000,
+                delay: 7500,
                 disableOnInteraction: false,
             },
-            speed: 1000,
+            speed: 3000,
             pagination: {
                 el: '.custom-pagination',
                 clickable: true,
@@ -115,7 +115,7 @@ export default {
                 
                 // Move to the next index
                 this.currentIndex = (this.currentIndex + 1) % this.doctors.length;
-            }, 5000); // Change every 5 seconds
+            }, 7000); // Change every 5 seconds
         }
     },
 };

@@ -6,7 +6,7 @@
                 Your Smile</h2>
 
             <!-- Swiper Container -->
-            <div class="swiper-container mySwiper py-10 relative overflow-hidden">
+            <div class="swiper-container mySwiper pl-4 md:pl-0 py-10 relative overflow-hidden">
                 <div class="swiper-wrapper">
                     <!-- Slide 1 -->
                     <div class="swiper-slide flex justify-start" v-for="(service,index) in services" :key="index">

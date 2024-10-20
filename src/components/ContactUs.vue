@@ -1,5 +1,5 @@
 <template>
-    <div id="contact-us" class="max-w-screen-xl h-auto flex flex-col py-6 mx-auto px-4">
+    <div id="contact-us" class="max-w-screen-xl h-auto flex flex-col py-6 mx-auto px-4 md:px-0">
         <div class="bg-[#0CB2AE] text-[#FFF9F2] rounded-3xl p-4 md:p-8 grid gap-8 grid-cols-1 md:grid-cols-2">
             <div class="space-y-5">
                 <h3 class=" text-2xl md:text-3xl">Get in touch with us</h3>
