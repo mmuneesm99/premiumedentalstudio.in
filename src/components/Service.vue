@@ -2,48 +2,19 @@
     <section id="services" class="max-w-screen-xl h-auto flex flex-col py-6 mx-auto">
         <div class="">
             <!-- Section Title -->
-            <h2 class="text-[#004443] font-bold  text-center md:text-left text-3xl px-4 md:px-0  mb-6">How We Care for Your Smile</h2>
+            <h2 class="text-[#004443] font-bold  text-center md:text-left text-3xl px-4 md:px-0  mb-6">How We Care for
+                Your Smile</h2>
 
             <!-- Swiper Container -->
             <div class="swiper-container mySwiper py-10 relative overflow-hidden">
                 <div class="swiper-wrapper">
                     <!-- Slide 1 -->
-                    <div class="swiper-slide flex justify-start">
-                        <div class="bg-white border border-[#00444385] overflow-hidden relative rounded-3xl  flex flex-col items-start w-[300px]">
-                            <img src="../assets/img/rootcanal.jpg" alt="Root Canal Treatment" class="rounded-t-lg mb-4" />
-                            <h3 class="text-[#00AEAA] font-semibold px-3 pb-4 text-lg">Root Canal<br/>Treatment</h3>
-                        </div>
-                    </div>
-
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide flex justify-start">
-                        <div class="bg-white  border border-[#00444385] overflow-hidden relative rounded-3xl  flex flex-col items-start w-[300px]">
-                            <img src="../assets/img/clear.jpg" alt="Clear Aligner" class="rounded-t-lg mb-4" />
-                            <h3 class="text-[#00AEAA] font-semibold px-3 pb-4 text-lg">Clear<br/>Aligner</h3>
-                        </div>
-                    </div>
-
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide flex justify-start">
-                        <div class="bg-white border border-[#00444385] overflow-hidden relative rounded-3xl  flex flex-col items-start w-[300px]">
-                            <img src="../assets/img/sports.jpg" alt="Sports Dentistry" class="rounded-t-lg mb-4" />
-                            <h3 class="text-[#00AEAA] font-semibold px-3 pb-4 text-lg">Sports<br/>Dentistry</h3>
-                        </div>
-                    </div>
-
-                    <!-- Slide 4 -->
-                    <div class="swiper-slide flex justify-start">
-                        <div class="bg-white border border-[#00444385] overflow-hidden relative rounded-3xl  flex flex-col items-start w-[300px]">
-                            <img src="../assets/img/rootcanal.jpg" alt="Teeth Whitening" class="rounded-t-lg mb-4" />
-                            <h3 class="text-[#00AEAA] font-semibold px-3 pb-4 text-lg">Teeth<br/>Whitening</h3>
-                        </div>
-                    </div>
-
-                    <!-- Slide 5 -->
-                    <div class="swiper-slide flex justify-start">
-                        <div class="bg-white border border-[#00444385] overflow-hidden relative rounded-3xl   flex flex-col items-start w-[300px]">
-                            <img src="../assets/img/sports.jpg" alt="Dental Implants" class="rounded-t-lg mb-4" />
-                            <h3 class="text-[#00AEAA] font-semibold px-3 pb-4 text-lg">Dental<br/>Implants</h3>
+                    <div class="swiper-slide flex justify-start" v-for="(service,index) in services" :key="index">
+                        <div
+                            class="bg-white border border-[#00444385] overflow-hidden relative rounded-3xl  flex flex-col items-start w-[300px]">
+                            <img :src="getImageUrl(service.imageUrl)" alt="Root Canal Treatment"
+                                class="rounded-t-lg mb-4" />
+                            <h3 class="text-[#00AEAA] font-semibold px-3 pb-4 text-lg">{{ service.serviceName }}</h3>
                         </div>
                     </div>
                 </div>
@@ -58,6 +29,82 @@
 <script>
 
 export default {
+    data() {
+        return {
+            services: [],
+            baseUrl: 'https://mmuneesm99.github.io/imagecloude/servises/',
+        }
+    },
+    methods: {
+        getImageUrl(imageName) {
+            return `${this.baseUrl}${imageName}`;
+        },
+    },
+    created() {
+        this.services = [
+            {
+                "serviceName": "Root Canal Treatment",
+                "imageUrl": "service14.jpg"
+            },
+            {
+                "serviceName": "Orthodontics Ceramic Bracket",
+                "imageUrl": "service15.jpg"
+            },
+            {
+                "serviceName": "Crown & Bridge",
+                "imageUrl": "service1.jpg"
+            },
+            {
+                "serviceName": "Implant",
+                "imageUrl": "service2.jpg"
+            },
+            {
+                "serviceName": "Cosmetic Dentistry",
+                "imageUrl": "service3.jpg"
+            },
+            {
+                "serviceName": "CD/RPD",
+                "imageUrl": "service4.jpg"
+            },
+            {
+                "serviceName": "Pediatric Dentistry",
+                "imageUrl": "service5.jpg"
+            },
+            {
+                "serviceName": "PRP Therapy",
+                "imageUrl": "service6.jpg"
+            },
+            {
+                "serviceName": "Dentofacial Orthopedics",
+                "imageUrl": "service7.jpg"
+            },
+            {
+                "serviceName": "Periodontics",
+                "imageUrl": "service8.jpg"
+            },
+            {
+                "serviceName": "Impaction",
+                "imageUrl": "service9.jpg"
+            },
+            {
+                "serviceName": "Digital X-Ray",
+                "imageUrl": "service10.jpg"
+            },
+            {
+                "serviceName": "Clear Aligner",
+                "imageUrl": "service11.jpg"
+            },
+            {
+                "serviceName": "Sports Dentistry",
+                "imageUrl": "service12.jpg"
+            },
+            {
+                "serviceName": "Oral Pathology",
+                "imageUrl": "service13.jpg"
+            }
+        ]
+
+    },
     mounted() {
         // Initialize Swiper when the component is mounted
         new Swiper('.mySwiper', {
