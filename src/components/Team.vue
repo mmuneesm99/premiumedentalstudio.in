@@ -15,13 +15,13 @@
             </div>
 
             <div class="swiper-container mySwiperTeam py-10 relative overflow-hidden">
-                <div class="swiper-wrapper h-[400px]">
+                <div class="swiper-wrapper h-[380px]">
                     <div v-for="(doctor, index) in doctors" :key="index" class="swiper-slide flex justify-start" @click="toggleFlip(index)">
                         <div class="" :class="['flip-card', isFlipped[index] ? 'flipped ' : '', 'bg-transparent', 'flex', 'flex-col', 'items-start', 'w-[300px]']">
                             <div class="flip-card-inner rounded-[36px]">
                                 <div class="flip-card-front bg-white p-2 shadow-md relative overflow-hidden">
                                     <img :src="getImageUrl(doctor.image)" :alt="doctor.name" class="rounded-[36px] mb-4" />
-                                    <h3 class="text-[#00AEAA] font-semibold px-3 pb-4 text-lg">{{ doctor.name }}</h3>
+                                    <h3 class="text-[#00AEAA] font-semibold text-center px-3 text-lg">{{ doctor.name }}</h3>
                                 </div>
                                 <div class="flip-card-back bg-[#00AEAA] text-white p-4 rounded-[36px]">
                                     <h3 class="font-semibold text-xl mb-2">{{ doctor.name }}</h3>
