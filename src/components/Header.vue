@@ -12,7 +12,7 @@
       <div class="mt-14">
         <img class="min-h-[250px] object-cover rounded-3xl" src="../assets/img/drkasim.jpg" alt="">
       </div>
-      <div class="block md:hidden pt-5">
+      <div class="block md:hidden pt-8">
         <a href="#contact-us" class="border border-black rounded-full pl-5 pr-1 py-1 flex items-center">Get in touch<i class="bx ml-2 bg-[#004443] rounded-full px-1 py-1 text-[#FFF9F2] bx-phone"></i></a>
       </div>
     </div>
