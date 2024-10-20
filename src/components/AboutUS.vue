@@ -10,7 +10,7 @@
                     OUR COMMITMENT TO <br />
                     EXCEPTIONAL DENTAL CARE
                 </h3>
-                <div class="ml-0 md:ml-5 col-span-2 px-8 relative z-20  rounded-3xl block md:hidden">
+                <div data-aos="fade-up" class="ml-0 md:ml-5 col-span-2 px-8 relative z-20  rounded-3xl block md:hidden">
                     <img src="../assets/img/about-image-1.jpg" alt="Dental Clinic"
                         class="rounded-3xl -mb-14  shadow-md w-full object-cover" />
                 </div>
