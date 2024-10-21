@@ -8,5 +8,7 @@
     --swiper-pagination-color: #00AEAA; 
     --swiper-pagination-bullet-opacity: 1; 
     --swiper-pagination-bullet-border-radius:2px;
+    --swiper-pagination-bullet-width:10px;
+    --swiper-pagination-bullet-height:10px;
     scroll-behavior: smooth;
 }

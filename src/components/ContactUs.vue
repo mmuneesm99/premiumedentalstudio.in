@@ -10,7 +10,7 @@
                         <label for="name">Name</label>
                         <div
                             class="border border-[#FFF9F2] rounded-lg bg-transparent focus:outline-none focus:border-white relative overflow-hidden">
-                            <input id="Name" v-model="formData.name"
+                            <input id="name" v-model="formData.name"
                                 class="bg-transparent w-full border-none outline-none py-3" type="text" required>
                         </div>
                     </div>
@@ -32,7 +32,7 @@
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.9738410172954!2d76.07174727457625!3d10.889592457097102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7b79d85b89e49%3A0x65c23a08d4be82d9!2sPremium%20Dental%20Studio!5e0!3m2!1sen!2sin!4v1729358972473!5m2!1sen!2sin"
                     width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    referrerpolicy="no-referrer-when-downgrade" title="Premium Dental Studio Valanchery, Malappuram"></iframe>
             </div>
         </div>
     </div>
