@@ -11,14 +11,14 @@
                     EXCEPTIONAL DENTAL CARE
                 </h3>
                 <div data-aos="fade-up" class="ml-0 md:ml-5 col-span-2 px-8 relative z-20  rounded-[36px] block md:hidden">
-                    <img loading="lazy" src="../assets/img/about-image-1.jpg" alt="Dental Clinic"
+                    <img loading="lazy" src="../assets/img/about-image-1.webp" alt="Dental Clinic"
                         class="rounded-[36px] -mb-14  shadow-md w-full object-cover" />
                 </div>
                 <div
                     class="grid md:bg-transparent text-center md:text-left bg-[#00AEAA] px-4 pt-20 md:pt-0  rounded-t-[36px] md:rounded-none md:px-0 lg:grid-cols-3 gap-8 relative z-10">
                     <!-- Image Section -->
                     <div class="ml-0 md:ml-5 col-span-2 rounded-[36px] hidden md:block">
-                        <img loading="lazy" src="../assets/img/about-image-1.jpg" alt="Dental Clinic"
+                        <img loading="lazy" src="../assets/img/about-image-1.webp" alt="Dental Clinic"
                             class="rounded-[36px] shadow-md w-full object-cover" />
                     </div>
 
@@ -59,7 +59,7 @@
                         </div>
                     </div>
                     <div class="md:order-3 order-2">
-                        <img loading="lazy" src="../assets/img/about-image-2.jpg" alt="Mission Image"
+                        <img loading="lazy" src="../assets/img/about-image-2.webp" alt="Mission Image"
                             class="rounded-[36px] shadow-md  w-full object-cover" />
                     </div>
                 </div>

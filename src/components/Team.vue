@@ -3,7 +3,7 @@
         <div>
             <h2 class="text-[#004443] font-bold text-center text-3xl px-4 mb-16">The Experts Behind Every Smile</h2>
             <div class="bg-[#00AEAA] p-5 grid grid-cols-1 lg:grid-cols-3 space-x-0 md:space-x-6 space-y-4 md:space-y-0 mb-5 md:mb-0 rounded-[36px]">
-                <img loading="lazy" src="../assets/img/drkasim.jpg" class="object-cover rounded-[36px] mx-auto w-full  h-[470px]" alt="Dr. Sayyid Kasim V" />
+                <img loading="lazy" src="../assets/img/drkasim.webp" class="object-cover rounded-[36px] mx-auto w-full  h-[470px]" alt="Dr. Sayyid Kasim V" />
                 <div class="col-span-2 flex flex-col justify-center space-y-5 text-[#FFF9F2]">
                     <h3 class="text-2xl md:text-4xl">Dr. Sayyid Kasim V</h3>
                     <hr>
@@ -46,10 +46,10 @@ export default {
             isFlipped: [],
             baseUrl: 'https://mmuneesm99.github.io/imagecloude/',
             doctors: [
-                { name: "Dr. SUHA SUNAYYA K.F", image: "doctor1.jpg", specialty: "Specialist in Root Canal Treatment with over 10 years of experience." },
-                { name: "Dr. SIJI CHIRAMEL", image: "doctor2.jpg", specialty: "Specialist in Cosmetic Dentistry with over 8 years of experience." },
-                { name: "Dr. MOHAMMED ASLIF", image: "doctor3.jpg", specialty: "Expert in Pediatric Dentistry with over 5 years of experience." },
-                { name: "Dr. SIJI CHIRAMEL", image: "doctor2.jpg", specialty: "Specialist in Cosmetic Dentistry with over 8 years of experience." },
+                { name: "Dr. SUHA SUNAYYA K.F", image: "doctor1.webp", specialty: "Specialist in Root Canal Treatment with over 10 years of experience." },
+                { name: "Dr. SIJI CHIRAMEL", image: "doctor2.webp", specialty: "Specialist in Cosmetic Dentistry with over 8 years of experience." },
+                { name: "Dr. MOHAMMED ASLIF", image: "doctor3.webp", specialty: "Expert in Pediatric Dentistry with over 5 years of experience." },
+                { name: "Dr. SIJI CHIRAMEL", image: "doctor2.webp", specialty: "Specialist in Cosmetic Dentistry with over 8 years of experience." },
             ],
             currentIndex: 0, // Index of the currently flipped card
             interval: null, // Interval ID for clearing later

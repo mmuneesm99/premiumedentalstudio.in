@@ -22,7 +22,7 @@ export default {
         return {
             baseUrl: 'https://mmuneesm99.github.io/imagecloude/',
             gallery: [
-              'image1.jpg','image2.jpg','image3.jpg','image4.jpg','image5.jpg','image7.jpg'  
+              'image1.webp','image2.webp','image3.webp','image4.webp','image5.webp','image7.webp'  
             ],
         };
     },

@@ -2,7 +2,7 @@
     <div id="footer" class="bg-[#004443] rounded-t-3xl py-5">
         <div class="max-w-screen-xl h-auto flex flex-col px-4 mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-3 text-center md:text-left gap-8 py-5">
-                <div class="py-3 mx-auto md:mx-0"><img loading="lazy" class="h-16 md:h-20" src="../assets/img/logo-white.png" alt=""></div>
+                <div class="py-3 mx-auto md:mx-0"><img loading="lazy" class="h-16 md:h-20" src="../assets/img/logo-white.svg" alt=""></div>
                 <div class="text-[#D9D9D9] space-y-3">
                     <h4 class="font-semibold text-xl">Contact Us</h4>
                     <p class="text-sm">Address : Sayyid complex, Perinthalmanna road Valanchery, Malappuram,

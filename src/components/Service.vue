@@ -44,63 +44,63 @@ export default {
         this.services = [
             {
                 "serviceName": "Root Canal Treatment",
-                "imageUrl": "service14.jpg"
+                "imageUrl": "service14.webp"
             },
             {
                 "serviceName": "Orthodontics Ceramic Bracket",
-                "imageUrl": "service15.jpg"
+                "imageUrl": "service15.webp"
             },
             {
                 "serviceName": "Crown & Bridge",
-                "imageUrl": "service1.jpg"
+                "imageUrl": "service1.webp"
             },
             {
                 "serviceName": "Implant",
-                "imageUrl": "service2.jpg"
+                "imageUrl": "service2.webp"
             },
             {
                 "serviceName": "Cosmetic Dentistry",
-                "imageUrl": "service3.jpg"
+                "imageUrl": "service3.webp"
             },
             {
                 "serviceName": "CD/RPD",
-                "imageUrl": "service4.jpg"
+                "imageUrl": "service4.webp"
             },
             {
                 "serviceName": "Pediatric Dentistry",
-                "imageUrl": "service5.jpg"
+                "imageUrl": "service5.webp"
             },
             {
                 "serviceName": "PRP Therapy",
-                "imageUrl": "service6.jpg"
+                "imageUrl": "service6.webp"
             },
             {
                 "serviceName": "Dentofacial Orthopedics",
-                "imageUrl": "service7.jpg"
+                "imageUrl": "service7.webp"
             },
             {
                 "serviceName": "Periodontics",
-                "imageUrl": "service8.jpg"
+                "imageUrl": "service8.webp"
             },
             {
                 "serviceName": "Impaction",
-                "imageUrl": "service9.jpg"
+                "imageUrl": "service9.webp"
             },
             {
                 "serviceName": "Digital X-Ray",
-                "imageUrl": "service10.jpg"
+                "imageUrl": "service10.webp"
             },
             {
                 "serviceName": "Clear Aligner",
-                "imageUrl": "service11.jpg"
+                "imageUrl": "service11.webp"
             },
             {
                 "serviceName": "Sports Dentistry",
-                "imageUrl": "service12.jpg"
+                "imageUrl": "service12.webp"
             },
             {
                 "serviceName": "Oral Pathology",
-                "imageUrl": "service13.jpg"
+                "imageUrl": "service13.webp"
             }
         ]
 
