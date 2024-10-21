@@ -4,7 +4,7 @@
             <h2 class="text-[#004443] font-bold text-3xl mb-16 text-center md:text-left">Smiles That Speak</h2>
             <div class="grid  grid-cols-1 md:grid-cols-3 gap-5">
                 <div class="md:col-span-2 col-span-1 rounded-[36px] relative overflow-hidden">
-                    <img loading="lazy" src="../assets/img/testimony.webp" class="max-h-[305px] object-cover h-full w-full" alt="Dr. Sayyid Kasim V" />
+                    <img loading="lazy" src="../assets/img/testimony.avif" class="max-h-[305px] object-cover h-full w-full" alt="Dr. Sayyid Kasim V" />
 
                 </div>
                 <div class="bg-[#00AEAA] p-5 grid grid-rows-2 rounded-[36px]">
