@@ -3,11 +3,11 @@
         <div>
             <h2 class="text-[#004443] font-bold text-3xl mb-16 text-center md:text-left">Smiles That Speak</h2>
             <div class="grid  grid-cols-1 md:grid-cols-3 gap-5">
-                <div class="md:col-span-2 col-span-1 rounded-[36px] relative overflow-hidden">
+                <div class="md:col-span-2 col-span-1 rounded-[32px] relative overflow-hidden">
                     <img loading="lazy" src="../assets/img/testimony.avif" class="max-h-[305px] object-cover h-full w-full" alt="Dr. Sayyid Kasim V" />
 
                 </div>
-                <div class="bg-[#00AEAA] p-5 grid grid-rows-2 rounded-[36px]">
+                <div class="bg-[#00AEAA] p-5 grid grid-rows-2 rounded-[32px]">
                     <div class="w-fill flex justify-end">
                         <img loading="lazy" src="../assets/img/avatar.svg" class="h-24 mr-5" alt="Dr. Sayyid Kasim V" />
                     </div>
@@ -16,7 +16,7 @@
                         <p class="md:text-lg text-base italic max-w-lg">"Dr. Kasim and his staff are amazing! They explained every step of my treatment, and the results are perfect."</p>
                     </div>
                 </div>
-                <div class="bg-[#004443] p-5 grid grid-rows-2 rounded-[36px]">
+                <div class="bg-[#004443] p-5 grid grid-rows-2 rounded-[32px]">
                     <div class="w-fill flex justify-end">
                         <img loading="lazy" src="../assets/img/avatar.svg" class="h-20 mr-5" alt="Dr. Sayyid Kasim V" />
                     </div>
@@ -25,7 +25,7 @@
                         <p class="md:text-lg italic text-base max-w-lg">"The care and attention I received were outstanding. I trust Premium Dental Studio with all my dental needs."</p>
                     </div>
                 </div>
-                <div class="bg-[#00AEAA] p-5 grid grid-rows-2 rounded-[36px]">
+                <div class="bg-[#00AEAA] p-5 grid grid-rows-2 rounded-[32px]">
                     <div class="w-fill flex justify-end">
                         <img loading="lazy" src="../assets/img/avatar.svg" class="h-24 mr-5" alt="Dr. Sayyid Kasim V" />
                     </div>
@@ -34,7 +34,7 @@
                         <p class="md:text-lg text-base max-w-lg italic">"From booking the appointment to the treatment, everything was smooth and professional. Highly recommend!""</p>
                     </div>
                 </div>
-                <div class="bg-[#004443] p-5 grid grid-rows-2 rounded-[36px]">
+                <div class="bg-[#004443] p-5 grid grid-rows-2 rounded-[32px]">
                     <div class="w-fill flex justify-end">
                         <img loading="lazy" src="../assets/img/avatar.svg" class="h-24 mr-5" alt="Dr. Sayyid Kasim V" />
                     </div>

@@ -5,8 +5,8 @@
             <div class="swiper-container mySwiperGallery pl-4 md:pl-0 py-10 relative overflow-hidden">
                 <div class="swiper-wrapper h-full max-h-[600px]">
                     <div v-for="(image, index) in gallery" :key="index" data-aos="fade-left" class="swiper-slide flex justify-center">
-                        <div class="bg-white shadow-md rounded-3xl flex flex-col items-center h-fit">
-                            <img loading="lazy" :src="getImageUrl(image)" alt="Premium dental studio gallery" class="rounded-3xl w-full max-w-[416px]" />
+                        <div class="bg-white shadow-md rounded-[32px] flex flex-col items-center h-fit">
+                            <img loading="lazy" :src="getImageUrl(image)" alt="Premium dental studio gallery" class="rounded-[32px] w-full max-w-[416px]" />
                         </div>
                     </div>
                 </div>
