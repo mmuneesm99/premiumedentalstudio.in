@@ -23,7 +23,7 @@
                     </div>
 
                     <!-- Text Section -->
-                    <div class="flex text-[#FFF9F2] md:text-[#00AEAA] flex-col text-base md:text-xl justify-start">
+                    <div class="flex text-[#FFF9F2] md:text-[#004443] flex-col text-base md:text-xl justify-start">
                         <p class="mb-4">
                             At Premium Dental Studio, we blend cutting-edge technology with personalized care to offer a
                             top-tier dental experience. Our expert team provides a full range of services, from routine
