@@ -1,27 +1,9 @@
-import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
 
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+
+// https://vitejs.dev/config/
 export default defineConfig({
-  base: '/premiumedentalstudio.in/', // Make sure it ends with a slash
-  plugins: [vue()],
-  build: {
-    minify: 'esbuild',
-    sourcemap: false,
-    chunkSizeWarningLimit: 500,
-  },
-  server: {
-    proxy: {
-      '/api': {
-        target: 'https://maps.googleapis.com',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
-      },
-    },
-  },
-  
-  resolve: {
-    alias: {
-      '@': '/src',
-    },
-  },
-});
+  base: '/premiumedentalstudio.in',
+  plugins: [vue()]
+})

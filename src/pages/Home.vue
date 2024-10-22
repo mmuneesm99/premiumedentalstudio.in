@@ -3,12 +3,11 @@
     <AboutUS />
     <Service />
     <Team />
-    <Testimony />
+    <!-- <Testimony /> -->
     <Gallery />
     <ContactUs />
 </template>
 <script>
-import { nextTick } from 'vue';
 import Header from '../components/Header.vue';
 import AboutUS from '../components/AboutUS.vue';
 import Service from '../components/Service.vue';
@@ -19,21 +18,5 @@ import ContactUs from '../components/ContactUs.vue';
 
 export default {
     components: { Header, AboutUS, Service, Team, Testimony, Gallery, ContactUs },
-    mounted() {
-
-        nextTick(() => {
-            initAccordions();
-            initCarousels();
-            initCollapses();
-            initDials();
-            initDismisses();
-            initDrawers();
-            initDropdowns();
-            initModals();
-            initPopovers();
-            initTabs();
-            initTooltips();
-        });
-    },
 }
 </script>
