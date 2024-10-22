@@ -1,25 +1,23 @@
 <template>
     <section id="services" class="max-w-screen-xl h-auto flex flex-col py-6 mx-auto">
         <div class="">
-            <!-- Section Title -->
             <h2 class="text-[#004443] font-bold  text-center md:text-left text-3xl px-4 md:px-0  mb-6">How We Care for
                 Your Smile</h2>
 
-            <!-- Swiper Container -->
             <div class="swiper-container mySwiper pl-4 md:pl-0 py-10 relative overflow-hidden">
                 <div class="swiper-wrapper">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide flex justify-start" v-for="(service,index) in services" :key="index">
+
+                    <router-link :to="`/department/${service.name}`" class="swiper-slide flex justify-start" v-for="(service, index) in services" :key="index">
                         <div
                             class="bg-white border border-[#00444385] overflow-hidden relative rounded-[32px]  flex flex-col items-start w-[300px]">
                             <img :src="getImageUrl(service.imageUrl)" alt="Root Canal Treatment" loading="lazy"
                                 class="rounded-t-lg mb-4" />
-                            <h3 class="text-[#00AEAA] font-semibold px-3 pb-4 text-lg">{{ service.serviceName }}</h3>
+                            <h3 class="text-[#00AEAA] font-semibold px-3 pb-4 text-lg">{{ service.name }}</h3>
                         </div>
-                    </div>
+                    </router-link>
                 </div>
 
-                <!-- Custom Pagination -->
+
                 <div class="swiper-pagination custom-pagination  flex justify-center space-x-2"></div>
             </div>
         </div>
@@ -27,7 +25,7 @@
 </template>
 
 <script>
-
+import departmentsData from  '../assets/js/departments.json'
 export default {
     data() {
         return {
@@ -39,73 +37,76 @@ export default {
         getImageUrl(imageName) {
             return `${this.baseUrl}${imageName}`;
         },
-    },
-    created() {
-        this.services = [
-            {
-                "serviceName": "Root Canal Treatment",
-                "imageUrl": "service14.webp"
-            },
-            {
-                "serviceName": "Orthodontics Ceramic Bracket",
-                "imageUrl": "service15.webp"
-            },
-            {
-                "serviceName": "Crown & Bridge",
-                "imageUrl": "service1.webp"
-            },
-            {
-                "serviceName": "Implant",
-                "imageUrl": "service2.webp"
-            },
-            {
-                "serviceName": "Cosmetic Dentistry",
-                "imageUrl": "service3.webp"
-            },
-            {
-                "serviceName": "CD/RPD",
-                "imageUrl": "service4.webp"
-            },
-            {
-                "serviceName": "Pediatric Dentistry",
-                "imageUrl": "service5.webp"
-            },
-            {
-                "serviceName": "PRP Therapy",
-                "imageUrl": "service6.webp"
-            },
-            {
-                "serviceName": "Dentofacial Orthopedics",
-                "imageUrl": "service7.webp"
-            },
-            {
-                "serviceName": "Periodontics",
-                "imageUrl": "service8.webp"
-            },
-            {
-                "serviceName": "Impaction",
-                "imageUrl": "service9.webp"
-            },
-            {
-                "serviceName": "Digital X-Ray",
-                "imageUrl": "service10.webp"
-            },
-            {
-                "serviceName": "Clear Aligner",
-                "imageUrl": "service11.webp"
-            },
-            {
-                "serviceName": "Sports Dentistry",
-                "imageUrl": "service12.webp"
-            },
-            {
-                "serviceName": "Oral Pathology",
-                "imageUrl": "service13.webp"
-            }
-        ]
+    }, created() {
+        // this.services = [
+        //     {
+        //         "serviceName": "Root Canal Treatment",
+        //         "imageUrl": "service14.webp"
+        //     },
+        //     {
+        //         "serviceName": "Orthodontics Ceramic Bracket",
+        //         "imageUrl": "service15.webp"
+        //     },
+        //     {
+        //         "serviceName": "Crown & Bridge",
+        //         "imageUrl": "service1.webp"
+        //     },
+        //     {
+        //         "serviceName": "Implant",
+        //         "imageUrl": "service2.webp"
+        //     },
+        //     {
+        //         "serviceName": "Cosmetic Dentistry",
+        //         "imageUrl": "service3.webp"
+        //     },
+        //     {
+        //         "serviceName": "CD/RPD",
+        //         "imageUrl": "service4.webp"
+        //     },
+        //     {
+        //         "serviceName": "Pediatric Dentistry",
+        //         "imageUrl": "service5.webp"
+        //     },
+        //     {
+        //         "serviceName": "PRP Therapy",
+        //         "imageUrl": "service6.webp"
+        //     },
+        //     {
+        //         "serviceName": "Dentofacial Orthopedics",
+        //         "imageUrl": "service7.webp"
+        //     },
+        //     {
+        //         "serviceName": "Periodontics",
+        //         "imageUrl": "service8.webp"
+        //     },
+        //     {
+        //         "serviceName": "Impaction",
+        //         "imageUrl": "service9.webp"
+        //     },
+        //     {
+        //         "serviceName": "Digital X-Ray",
+        //         "imageUrl": "service10.webp"
+        //     },
+        //     {
+        //         "serviceName": "Clear Aligner",
+        //         "imageUrl": "service11.webp"
+        //     },
+        //     {
+        //         "serviceName": "Sports Dentistry",
+        //         "imageUrl": "service12.webp"
+        //     },
+        //     {
+        //         "serviceName": "Oral Pathology",
+        //         "imageUrl": "service13.webp"
+        //     }
+        // ]
+        this.services  = departmentsData.departments;
+        console.log(this.services);
+
 
     },
     mounted() {
+
         // Initialize Swiper when the component is mounted
         new Swiper('.mySwiper', {
             slidesPerView: 'auto',

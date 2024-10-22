@@ -1,18 +1,25 @@
 <template>
-  <Navbar />
+  <div id="app">
+    <!-- This is where the navigation will be rendered -->
+    <!-- <header>
+      <nav>
+        <router-link to="/">Home</router-link>
+        <router-link to="/about">About</router-link>
+        <router-link to="/services">Services</router-link>
+      </nav>
+    </header> -->
+    <Navbar />
 
-  <Header />
-  <AboutUS />
-  <Service />
-  <Team />
-  <Testimony />
-  <Gallery />
-  <ContactUs />
-  <Footer />
+    <main>
+      <router-view />
+    </main>
+    <Footer />
+  </div>
 </template>
+
 <script>
-import { nextTick } from 'vue';
-import Header from './components/Header.vue';
+import Navbar from './components/Navbar.vue';
+import Footer from './components/Footer.vue';
 import {
   initAccordions,
   initCarousels,
@@ -26,20 +33,12 @@ import {
   initTabs,
   initTooltips
 } from 'flowbite';
-import AboutUS from './components/AboutUS.vue';
-import Navbar from './components/Navbar.vue';
-import Service from './components/Service.vue';
-import Team from './components/Team.vue';
-import Testimony from './components/Testimony.vue';
-import Gallery from './components/Gallery.vue';
-import Footer from './components/Footer.vue';
-import ContactUs from './components/ContactUs.vue';
-
 export default {
-  components: { Header, AboutUS, Navbar, Service, Team, Testimony, Gallery, ContactUs, Footer },
+  components: { Navbar, Footer },
+  name: 'App',
   mounted() {
-
-    nextTick(() => {
+    // Re-initialize AOS after the component is mounted
+    this.$nextTick(() => {  // AOS refresh to ensure animations work after route changes
       initAccordions();
       initCarousels();
       initCollapses();
@@ -52,6 +51,6 @@ export default {
       initTabs();
       initTooltips();
     });
-  },
-}
+  }
+};
 </script>
