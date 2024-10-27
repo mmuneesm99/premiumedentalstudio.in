@@ -5,7 +5,6 @@
     <Team />
     <Testimony />
     <Gallery />
-    <ContactUs />
 </template>
 <script>
 import Header from '../components/Header.vue';

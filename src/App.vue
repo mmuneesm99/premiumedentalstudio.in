@@ -13,6 +13,7 @@
     <main>
       <router-view />
     </main>
+    <ContactUs />
     <Footer />
   </div>
 </template>
@@ -33,8 +34,9 @@ import {
   initTabs,
   initTooltips
 } from 'flowbite';
+import ContactUs from './components/ContactUs.vue';
 export default {
-  components: { Navbar, Footer },
+  components: { Navbar, Footer,ContactUs },
   name: 'App',
   mounted() {
     // Re-initialize AOS after the component is mounted

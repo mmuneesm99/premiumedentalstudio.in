@@ -52,8 +52,8 @@
         </ul>
       </div>
       <div class="hidden md:block">
-        <a href="#contact-us" class="border border-black rounded-full pl-5 pr-1 py-1 flex items-center">Contact Us <i
-            class="bx ml-2 bg-[#004443] rounded-full px-1 py-1 text-[#FFF9F2] bx-phone"></i></a>
+        <router-link :to="{  hash: '#contact-us' }" href="#contact-us" class="border border-black rounded-full pl-5 pr-1 py-1 flex items-center">Contact Us <i
+            class="bx ml-2 bg-[#004443] rounded-full px-1 py-1 text-[#FFF9F2] bx-phone"></i></router-link>
       </div>
     </div>
   </nav>
