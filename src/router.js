@@ -19,6 +19,15 @@ const routes = [
 const router = createRouter({
   history: createWebHashHistory(), // Use hash-based history
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        el: to.hash, // Use el instead of selector for Vue Router 4
+        behavior: 'smooth',
+      };
+    }
+    return { top: 0 };
+  }
 });
 
 export default router;

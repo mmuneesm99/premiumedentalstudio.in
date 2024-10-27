@@ -18,14 +18,20 @@
         <ul
           class="flex  flex-col space-x-0 md:space-x-5 font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
           <li v-for="(item, index) in links" :key="index">
-            <a :href="item.href"
+            <router-link :class="[
+              'block transition-all duration-500 py-2 px-5 rounded-full',
+              activeSection === item.id
+                ? 'bg-[#00AEAA] text-white border border-[#004443]'
+                : 'bg-transparent text-[#004443] hover:bg-[#00AEAA] hover:text-white hover:border hover:border-[#004443]'
+            ]" :to="{ path: '/', hash: '#'+item.href }">{{ item.name }}</router-link>
+            <!-- <a  @click="navigateTo(item.href)"
             :class="[
                 'block transition-all duration-500 py-2 px-5 rounded-full',
                 activeSection === item.id
                   ? 'bg-[#00AEAA] text-white border border-[#004443]'
                   : 'bg-transparent text-[#004443] hover:bg-[#00AEAA] hover:text-white hover:border hover:border-[#004443]'
               ]">{{
-              item.name }}</a>
+              item.name }}</a> -->
           </li>
           <!-- <li>
             <a href="#about-us"
@@ -46,7 +52,8 @@
         </ul>
       </div>
       <div class="hidden md:block">
-        <a href="#contact-us" class="border border-black rounded-full pl-5 pr-1 py-1 flex items-center">Contact Us <i class="bx ml-2 bg-[#004443] rounded-full px-1 py-1 text-[#FFF9F2] bx-phone"></i></a>
+        <a href="#contact-us" class="border border-black rounded-full pl-5 pr-1 py-1 flex items-center">Contact Us <i
+            class="bx ml-2 bg-[#004443] rounded-full px-1 py-1 text-[#FFF9F2] bx-phone"></i></a>
       </div>
     </div>
   </nav>
@@ -58,15 +65,27 @@ export default {
     return {
       activeSection: 'home',
       links: [
-        { id: 'home', name: 'Home', href: '#home' },
-        { id: 'about-us', name: 'About Us', href: '#about-us' },
-        { id: 'services', name: 'Services', href: '#services' },
-        { id: 'doctors', name: 'Doctors', href: '#doctors' },
-        { id: 'testimonial', name: 'Reviews', href: '#testimonial' }
+        { id: 'home', name: 'Home', href: 'home' },
+        { id: 'about-us', name: 'About Us', href: 'about-us' },
+        { id: 'services', name: 'Services', href: 'services' },
+        { id: 'doctors', name: 'Doctors', href: 'doctors' },
+        { id: 'testimonial', name: 'Reviews', href: 'testimonial' }
       ]
     }
   },
- methods: {
+  methods: {
+    navigateTo(sectionId) {
+      if (this.$route.path !== '/') {
+        // If not on the home page, navigate to it with the hash
+        this.$router.push({ path: '/', hash: `#${sectionId}` });
+      } else {
+        // If on the home page, just scroll to the section
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    },
     handleScroll() {
       // Find the first section with a valid ID and check if it's in view
       const section = this.links

@@ -6,25 +6,25 @@
                     {{ department.name }}
                 </h1>
             </div>
-            <div class="grid grid-cols-1 items-center md:grid-cols-2 mt-8 md:mt-14">
+            <div class="grid grid-cols-1 items-center md:grid-cols-2 gap-5 mt-8 md:mt-14">
                 <div class="">
                     <img loading="lazy" class="min-h-[200px] object-cover rounded-[32px]"
                         :src="getImageUrl(department.imageUrl)" :alt="department.name">
                 </div>
-                <div>
+                <div class="text-center md:text-left">
                     <p>{{ department.description }}</p>
                 </div>
             </div>
         </div>
     </header>
-    <div class="max-w-screen-xl h-auto  mx-auto">
+    <div class="max-w-screen-xl h-auto  mx-auto px-4 md:px-0">
         <div class="py-16">
             <h2 class="text-[#004443] font-bold text-center text-3xl">Our services</h2>
         </div>
         <div class="flex flex-wrap gap-6 justify-center pb-12">
             <div class=" flex justify-center" v-for="(service, index) in department.services" :key="index">
             <div
-                class="bg-white shadow-md overflow-hidden relative rounded-[32px]  flex flex-col items-start w-[300px]">
+                class="bg-white shadow-md overflow-hidden relative rounded-[32px]  flex flex-col items-start  md:w-[300px]">
                 <img :src="getImageUrl(department.imageUrl)" alt="Root Canal Treatment" loading="lazy"
                     class="rounded-t-lg mb-4" />
                 <h3 class="text-[#00AEAA] font-semibold px-3 pb-4 text-lg">{{ service.serviceName }}</h3>
