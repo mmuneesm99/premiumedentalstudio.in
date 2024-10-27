@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 
 // Lazy load components
 const Home = () => import('./pages/Home.vue');
@@ -17,7 +17,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory('/premiumedentalstudio.in'), // Set base path here
+  history: createWebHashHistory(), // Use hash-based history
   routes,
 });
 

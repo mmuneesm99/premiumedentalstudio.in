@@ -3,7 +3,7 @@
     <AboutUS />
     <Service />
     <Team />
-    <!-- <Testimony /> -->
+    <Testimony />
     <Gallery />
     <ContactUs />
 </template>
