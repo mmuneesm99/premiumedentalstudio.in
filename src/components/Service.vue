@@ -30,7 +30,7 @@ export default {
     data() {
         return {
             services: [],
-            baseUrl: 'https://mmuneesm99.github.io/imagecloude/servises/',
+            baseUrl: 'https://mmuneesm99.github.io/imagecloude/',
         }
     },
     methods: {

@@ -15,6 +15,14 @@
                         </div>
                     </div>
                     <div class="flex flex-col">
+                        <label for="place">Place</label>
+                        <div
+                            class="border flex items-center border-[#FFF9F2] rounded-lg bg-transparent focus:outline-none focus:border-white relative overflow-hidden">
+                            <input id="place" v-model="formData.place"
+                                class="bg-transparent py-3 w-full border-none outline-none" type="text" required>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
                         <label for="phone">Phone Number</label>
                         <div
                             class="border flex items-center border-[#FFF9F2] rounded-lg bg-transparent focus:outline-none focus:border-white relative overflow-hidden">
@@ -44,6 +52,7 @@ export default {
             formData: {
                 name: '',
                 phone: '',
+                place: '',
                 dateTime: '',
                 status: 'Pending'
             },
@@ -70,6 +79,7 @@ export default {
             const data = new FormData();
             data.append('name', this.formData.name);
             data.append('phone', this.formData.phone);
+            data.append('place', this.formData.place);
             data.append('date', this.formData.dateTime);
             data.append('status', this.formData.status);
 
@@ -93,6 +103,7 @@ export default {
                     form.reset(); // Reset the form
                     // Reset formData and status to default
                     this.formData.name = '';
+                    this.formData.place = '';
                     this.formData.phone = '';
                     this.formData.status = 'Pending';
                 })
