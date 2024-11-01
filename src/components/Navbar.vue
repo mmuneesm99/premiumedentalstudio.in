@@ -23,7 +23,10 @@
               activeSection === item.id
                 ? 'bg-[#00AEAA] text-white border border-[#004443]'
                 : 'bg-transparent text-[#004443] hover:bg-[#00AEAA] hover:text-white hover:border hover:border-[#004443]'
-            ]" :to="{ path: '/', hash: '#'+item.href }">{{ item.name }}</router-link>
+            ]" :to="{ path: '/', hash: '#' + item.href }">
+              {{ item.name }}
+            </router-link>
+
             <!-- <a  @click="navigateTo(item.href)"
             :class="[
                 'block transition-all duration-500 py-2 px-5 rounded-full',
@@ -52,7 +55,8 @@
         </ul>
       </div>
       <div class="hidden md:block">
-        <router-link :to="{  hash: '#contact-us' }" href="#contact-us" class="border border-black rounded-full pl-5 pr-1 py-1 flex items-center">Contact Us <i
+        <router-link :to="{ hash: '#contact-us' }" href="#contact-us"
+          class="border border-black rounded-full pl-5 pr-1 py-1 flex items-center">Contact Us <i
             class="bx ml-2 bg-[#004443] rounded-full px-1 py-1 text-[#FFF9F2] bx-phone"></i></router-link>
       </div>
     </div>
@@ -87,10 +91,14 @@ export default {
       }
     },
     handleScroll() {
-      // Find the first section with a valid ID and check if it's in view
+      // Iterate through links to find the first section in view
       const section = this.links
         .filter(link => link.href !== '#')
-        .map((link) => document.querySelector(link.href))
+        .map(link => {
+          // Extract ID from the href (assumes format like #section1)
+          const id = link.href.replace('#', '');
+          return document.getElementById(id);
+        })
         .find((section) => {
           if (section) {
             const rect = section.getBoundingClientRect();
@@ -99,9 +107,10 @@ export default {
           return false;
         });
 
-      // Set the active section based on the found element
+      // Set the active section based on the found element's ID or default to 'home'
       this.activeSection = section ? section.id : 'home';
     }
+
   },
 
   mounted() {

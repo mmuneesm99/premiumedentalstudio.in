@@ -104,7 +104,7 @@ export default {
                 this.isFlipped[this.currentIndex] = true;
                 
                 // Move to the next index
-                this.currentIndex = (this.currentIndex + 1) % this.doctors.length;
+                this.currentIndex = (this.currentIndex + 1) % this.clients.length;
             }, 7000); // Change every 5 seconds
         }
     },
