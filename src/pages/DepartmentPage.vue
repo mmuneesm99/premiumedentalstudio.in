@@ -12,7 +12,7 @@
                 </div>
                 <div class="order-1 flex justify-center relative">
                     <div class="h-20 rounded-3xl mx-auto absolute bg-[#0CB2AE] w-[80%]"></div>
-                    <img loading="lazy" class="w-full mt-5 md:mt-10 relative object-cover rounded-[32px]"
+                    <img loading="lazy" class="w-full mt-5 md:mt-10 relative object-cover rounded-3xl"
                         :src="getImageUrl(department.banner)" :alt="department.name">
                 </div>
                 
@@ -26,7 +26,7 @@
         <div class="flex flex-wrap gap-6 justify-center pb-12">
             <div class=" flex justify-center" v-for="(service, index) in department.services" :key="index">
             <div
-                class="bg-white shadow-md overflow-hidden relative rounded-[32px]  flex flex-col items-start  md:w-[300px]">
+                class="bg-white shadow-md overflow-hidden relative rounded-3xl  flex flex-col items-start  md:w-[300px]">
                 <img :src="getImageUrl(service.imageUrl)" alt="Root Canal Treatment" loading="lazy"
                     class="rounded-t-lg mb-4" />
                 <h3 class="text-[#00AEAA] font-semibold px-3 pb-4 text-lg">{{ service.serviceName }}</h3>

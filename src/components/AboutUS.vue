@@ -10,16 +10,16 @@
                     OUR COMMITMENT TO <br />
                     EXCEPTIONAL DENTAL CARE
                 </h3>
-                <div data-aos="fade-up" class="ml-0 md:ml-5 col-span-2 px-8 relative z-20  rounded-[32px] block md:hidden">
-                    <img loading="lazy" src="../assets/img/about-image-1.avif" alt="Dental Clinic"
-                        class="rounded-[32px] -mb-14  shadow-md w-full object-cover" />
+                <div data-aos="fade-up" class="ml-0 md:ml-5 col-span-2 px-8 relative z-20  rounded-3xl block md:hidden">
+                    <img loading="lazy" src="../assets/img/premiumdentalstudio.avif" alt="Dental Clinic"
+                        class="rounded-3xl -mb-14  shadow-md w-full object-cover" />
                 </div>
                 <div
                     class="grid md:bg-transparent text-center md:text-left bg-[#00AEAA] px-4 pt-20 md:pt-0  rounded-t-[36px] md:rounded-none md:px-0 lg:grid-cols-3 gap-8 relative z-10">
                     <!-- Image Section -->
-                    <div class="ml-0 md:ml-5 col-span-2 rounded-[32px] hidden md:block">
-                        <img loading="lazy" src="../assets/img/about-image-1.avif" alt="Dental Clinic"
-                            class="rounded-[32px] shadow-md w-full object-cover" />
+                    <div class="ml-0 md:ml-5 col-span-2 rounded-3xl hidden md:block">
+                        <img loading="lazy" src="../assets/img/premiumdentalstudio.avif" alt="Dental Clinic"
+                            class="rounded-3xl shadow-md w-full object-cover" />
                     </div>
 
                     <!-- Text Section -->
@@ -38,7 +38,7 @@
 
                 <!-- Mission and Vision Section -->
                 <div
-                    class=" relative grid grid-cols-1  md:grid-cols-3 gap-6 mt-0  md:-mt-36 bg-[#00AEAA] px-3 md:px-8 py-8 rounded-b-3xl md:rounded-[32px] ">
+                    class=" relative grid grid-cols-1  md:grid-cols-3 gap-6 mt-0  md:-mt-36 bg-[#00AEAA] px-3 md:px-8 py-8 rounded-b-3xl md:rounded-3xl ">
                     <!-- Mission -->
                     <div class="relative md:order-1 order-1">
                         <div class="text-center md:text-left relative md:absolute bottom-0">
@@ -59,8 +59,8 @@
                         </div>
                     </div>
                     <div class="md:order-3 order-2">
-                        <img loading="lazy" src="../assets/img/about-image-2.avif" alt="Mission Image"
-                            class="rounded-[32px] shadow-md  w-full object-cover" />
+                        <img loading="lazy" src="../assets/img/premiumdentalstudio2.avif" alt="Mission Image"
+                            class="rounded-3xl shadow-md  w-full object-cover" />
                     </div>
                 </div>
             </div>

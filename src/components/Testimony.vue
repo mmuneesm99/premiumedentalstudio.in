@@ -3,13 +3,13 @@
         <div>
             <h2 class="text-[#004443] font-bold text-3xl mb-16 text-center md:text-left">Smiles That Speak</h2>
             <div class="grid  grid-cols-1 md:grid-cols-3 gap-5">
-                <div class="md:col-span-2 col-span-1 md:rounded-[32px] rounded-2xl relative overflow-hidden">
+                <div class="md:col-span-2 col-span-1 md:rounded-3xl rounded-2xl relative overflow-hidden">
                     <img loading="lazy" src="../assets/img/testimony.avif"
                         class="max-h-[305px] object-cover h-full w-full" alt="Dr. Sayyid Kasim V" />
 
                 </div>
                 <!-- <div v-for="(reviews, i) in googleReviews " :key="i"
-                    class="bg-[#00AEAA] p-5 grid grid-rows-2 md:rounded-[32px] rounded-2xl">
+                    class="bg-[#00AEAA] p-5 grid grid-rows-2 md:rounded-3xl rounded-2xl">
                     <div class="w-fill flex justify-end">
                         <img loading="lazy" :src="reviews.profile_photo_url" class="h-24 mr-5"
                             alt="Dr. Sayyid Kasim V" />
@@ -19,7 +19,7 @@
                         <p class="md:text-lg text-base italic max-w-lg">"{{ reviews.text }}"</p>
                     </div>
                 </div> -->
-                <div class="bg-[#00AEAA] p-5 grid grid-rows-2 md:rounded-[32px] rounded-2xl">
+                <div class="bg-[#00AEAA] p-5 grid grid-rows-2 md:rounded-3xl rounded-2xl">
                     <div class="w-fill flex justify-end">
                         <img loading="lazy" src="../assets/img/avatar.svg" class="h-24 mr-5" alt="Dr. Sayyid Kasim V" />
                     </div>
@@ -29,7 +29,7 @@
                             everything was smooth and professional. Highly recommend!""</p>
                     </div>
                 </div>
-                <div class="bg-[#004443] p-5 grid grid-rows-2 md:rounded-[32px] rounded-2xl">
+                <div class="bg-[#004443] p-5 grid grid-rows-2 md:rounded-3xl rounded-2xl">
                     <div class="w-fill flex justify-end">
                         <img loading="lazy" src="../assets/img/avatar.svg" class="h-20 mr-5" alt="Dr. Sayyid Kasim V" />
                     </div>
@@ -39,7 +39,7 @@
                             outstanding. I trust Premium Dental Studio with all my dental needs."</p>
                     </div>
                 </div>
-                <div class="bg-[#00AEAA] p-5 grid grid-rows-2 md:rounded-[32px] rounded-2xl">
+                <div class="bg-[#00AEAA] p-5 grid grid-rows-2 md:rounded-3xl rounded-2xl">
                     <div class="w-fill flex justify-end">
                         <img loading="lazy" src="../assets/img/avatar.svg" class="h-24 mr-5" alt="Dr. Sayyid Kasim V" />
                     </div>
@@ -49,7 +49,7 @@
                             everything was smooth and professional. Highly recommend!""</p>
                     </div>
                 </div>
-                <div class="bg-[#004443] p-5 grid grid-rows-2 md:rounded-[32px] rounded-2xl">
+                <div class="bg-[#004443] p-5 grid grid-rows-2 md:rounded-3xl rounded-2xl">
                     <div class="w-fill flex justify-end">
                         <img loading="lazy" src="../assets/img/avatar.svg" class="h-24 mr-5" alt="Dr. Sayyid Kasim V" />
                     </div>

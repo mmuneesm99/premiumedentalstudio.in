@@ -2,8 +2,8 @@
     <section id="doctors" class="max-w-screen-xl h-auto flex flex-col py-6 mx-auto">
         <div>
             <h2 class="text-[#004443] font-bold text-center text-3xl px-4 mb-16">The Experts Behind Every Smile</h2>
-            <div class="bg-[#00AEAA] p-5 grid grid-cols-1 lg:grid-cols-3 space-x-0 md:space-x-6 space-y-4 md:space-y-0 mb-5 md:mb-0 md:rounded-[32px] rounded-2xl">
-                <img loading="lazy" src="../assets/img/drkasim.avif" class="object-cover md:rounded-[32px] rounded-2xl mx-auto w-full  h-[470px]" alt="Dr. Sayyid Kasim V" />
+            <div class="bg-[#00AEAA] p-5 grid grid-cols-1 lg:grid-cols-3 space-x-0 md:space-x-6 space-y-4 md:space-y-0 mb-5 md:mb-0 md:rounded-3xl rounded-2xl">
+                <img loading="lazy" src="../assets/img/drkasim.avif" class="object-cover md:rounded-3xl rounded-2xl mx-auto w-full  h-[470px]" alt="Dr. Sayyid Kasim V" />
                 <div class="col-span-2 flex flex-col justify-center space-y-5 text-[#FFF9F2]">
                     <h3 class="text-2xl md:text-4xl">Dr. Sayyid Kasim V</h3>
                     <hr>
@@ -18,14 +18,13 @@
                 <div class="swiper-wrapper h-[380px]">
                     <div v-for="(doctor, index) in doctors" :key="index" class="swiper-slide flex justify-start" @click="toggleFlip(index)">
                         <div class="" :class="['flip-card', isFlipped[index] ? 'flipped ' : '', 'bg-transparent', 'flex', 'flex-col', 'items-start', 'w-[300px]']">
-                            <div class="flip-card-inner md:rounded-[32px] rounded-2xl">
+                            <div class="flip-card-inner md:rounded-3xl rounded-2xl">
                                 <div class="flip-card-front bg-white p-2 shadow-md relative overflow-hidden">
-                                    <img loading="lazy" :src="getImageUrl(doctor.image)" :alt="doctor.name" class="md:rounded-[32px] rounded-2xl mb-4" />
+                                    <img loading="lazy" :src="getImageUrl(doctor.image)" :alt="doctor.name" class="md:rounded-3xl rounded-2xl mb-4" />
                                     <h3 class="text-[#00AEAA] font-semibold text-center px-3 text-lg">{{ doctor.name }}</h3>
                                 </div>
-                                <div class="flip-card-back bg-[#00AEAA] text-white p-4 md:rounded-[32px] rounded-2xl">
-                                    <h3 class="font-semibold text-xl mb-2">{{ doctor.name }}</h3>
-                                    <hr>
+                                <div class="flip-card-back bg-[#00AEAA] text-white p-8 md:rounded-3xl rounded-2xl">
+                                    <h3 class="font-semibold text-xl mb-2">{{ doctor.qualification }}</h3>
                                     <p class="py-3">{{ doctor.specialty }}</p>
                                 </div>
                             </div>
@@ -46,10 +45,13 @@ export default {
             isFlipped: [],
             baseUrl: 'https://mmuneesm99.github.io/imagecloude/',
             doctors: [
-                { name: "Dr. SUHA SUNAYYA K.F", image: "doctor1.webp", specialty: "Specialist in Root Canal Treatment with over 10 years of experience." },
-                { name: "Dr. SIJI CHIRAMEL", image: "doctor2.webp", specialty: "Specialist in Cosmetic Dentistry with over 8 years of experience." },
-                { name: "Dr. MOHAMMED ASLIF", image: "doctor3.webp", specialty: "Expert in Pediatric Dentistry with over 5 years of experience." },
-                { name: "Dr. SIJI CHIRAMEL", image: "doctor2.webp", specialty: "Specialist in Cosmetic Dentistry with over 8 years of experience." },
+                { name: "Dr. SUHA SUNAYYA K.F", image: "doctor1.avif", qualification:"BDS", specialty: "[RESIDENT DENTAL SURGEON]" },
+                { name: "Dr. SIJI CHIRAMEL", image: "doctor2.avif",qualification:"BDS, MDS", specialty: "[CONSULTANT MAXILLOFACIAL SURGEON]  Prof. and H. O. D Dept. of DENTISTRY AND  MAXILLOFACIAL SURGERY. AMALA INSTITUTE OF  MEDICAL SCIENCE" },
+                { name: "Dr. MOHAMMED ASLIF", image: "doctor3.avif",qualification:"BDS, MDS", specialty: "[CONSULTANT ORAL AND MAXILLOFACIAL SURGEON, IMPLANTOLOGIST]" },
+                { name: "Dr. SHAHANA VP", image: "doctor1.avif",qualification:"BDS, MDS", specialty: "[CONSULTANT ORTHODONTIST AND DENTOFACIAL ORTHOPEDICIAN ]  Asst. Prof. MES Dental college" },
+                { name: "Dr. SALAHUDHEEN N", image: "doctor5.avif",qualification:"BDS, MDS", specialty: "[CONSULTANT ENDODONTIST]" },
+                { name: "Dr. SHAHNA N", image: "doctor1.avif",qualification:"BDS, MDS", specialty: "[CONSULTANT ENDODONTIST] Asst. Prof. EDUCARE INSTITUTE OF DENTAL SCIENCES" },
+                { name: "Dr. MOHAMED LABEEB K.P", image: "doctor4.avif",qualification:"BDS, MDS", specialty: "[CONSULTANT PEDODONTIST] Asst Prof. PK-DAS INSTITUTE OF MEDICAL SCIENCES" },
             ],
             currentIndex: 0, // Index of the currently flipped card
             interval: null, // Interval ID for clearing later

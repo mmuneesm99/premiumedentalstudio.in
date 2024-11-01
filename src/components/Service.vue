@@ -9,7 +9,7 @@
 
                     <router-link :to="`/department/${service.name}`" class="swiper-slide flex justify-start" v-for="(service, index) in services" :key="index">
                         <div
-                            class="bg-white border border-[#00444385] overflow-hidden relative rounded-[32px]  flex flex-col items-start w-[300px]">
+                            class="bg-white border border-[#00444385] overflow-hidden relative rounded-3xl  flex flex-col items-start w-[300px]">
                             <img :src="getImageUrl(service.imageUrl)" alt="Root Canal Treatment" loading="lazy"
                                 class="rounded-t-lg mb-4" />
                             <h3 class="text-[#00AEAA] font-semibold px-3 pb-4 text-lg">{{ service.name }}</h3>
