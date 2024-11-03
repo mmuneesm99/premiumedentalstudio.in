@@ -15,7 +15,7 @@
             </div>
 
             <div class="swiper-container mySwiperTeam py-10 pl-4 md:pl-0 relative overflow-hidden">
-                <div class="swiper-wrapper h-[380px]">
+                <div class="swiper-wrapper h-[380px] py-2">
                     <div v-for="(doctor, index) in doctors" :key="index" class="swiper-slide flex justify-start" @click="toggleFlip(index)">
                         <div class="" :class="['flip-card', isFlipped[index] ? 'flipped ' : '', 'bg-transparent', 'flex', 'flex-col', 'items-start', 'w-[300px]']">
                             <div class="flip-card-inner md:rounded-3xl rounded-2xl">
@@ -66,6 +66,7 @@ export default {
         new Swiper('.mySwiperTeam', {
             slidesPerView: 'auto',
             centeredSlides: false,
+            slidesPerGroup: 1,
             cssMode: true,
             spaceBetween: -50,
             loop: true,
@@ -82,11 +83,13 @@ export default {
                 640: {
                     slidesPerView: 1.6,
                     spaceBetween: -50,
+                    slidesPerGroup: 1,
 
                 },
                 768: {
                     slidesPerView: 2.2,
                     spaceBetween: 16,
+                    slidesPerGroup: 2
                 },
                 1024: {
                     slidesPerView: 4,
