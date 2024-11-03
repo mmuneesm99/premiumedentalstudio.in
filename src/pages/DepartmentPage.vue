@@ -29,8 +29,8 @@
                 class="bg-white shadow-md overflow-hidden relative rounded-3xl  flex flex-col items-start  md:w-[300px]">
                 <img :src="getImageUrl(service.imageUrl)" alt="Root Canal Treatment" loading="lazy"
                     class="rounded-t-lg mb-4" />
-                <h3 class="text-[#00AEAA] font-semibold px-3 pb-4 text-lg">{{ service.serviceName }}</h3>
-                <!-- <p class="px-3 pb-4">{{ service.description }}</p> -->
+                <h3 class="text-[#00AEAA] font-semibold px-3 pb-3 text-lg">{{ service.serviceName }}</h3>
+                <p class="px-3 pb-4">{{ service.description }}</p>
             </div>
         </div>
         </div>
