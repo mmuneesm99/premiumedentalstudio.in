@@ -14,7 +14,7 @@
                     <h4 class="font-semibold text-xl">For Booking</h4>
                     <p class="text-sm">Phone : +91 9645 622262,
                         04942642262 </p>
-                    <p class="text-sm">Working time : 9:30 am to 7.00 pm (Sunday consultation ; prior appoinments only)
+                    <p class="text-sm">Working time : 9:30 am to 7.30 pm (Sunday consultation ; prior appoinments only)
                     </p>
                 </div>
             </div>
