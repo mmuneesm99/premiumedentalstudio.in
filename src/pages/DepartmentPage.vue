@@ -1,5 +1,5 @@
 <template>
-    <header id="services" v-if="department" class=" h-auto  relative">
+    <header id="" v-if="department" class=" h-auto  relative">
         <div class="max-w-screen-xl flex flex-col mt-[150px] items-center justify-center mx-auto px-4 md:px-0">
             <div class="mb-10 sm:mb-0 sm:pr-8 text-center">
                 <h1 class="text-balance text-4xl font-semibold tracking-tight text-[#004443] lg:text-6xl 2xl:text-7xl">
@@ -29,8 +29,8 @@
                 class="bg-white shadow-md overflow-hidden relative rounded-3xl  flex flex-col items-start  md:w-[300px]">
                 <img :src="getImageUrl(service.imageUrl)" alt="Root Canal Treatment" loading="lazy"
                     class="rounded-t-lg mb-4" />
-                <h3 class="text-[#00AEAA] font-semibold px-3 pb-3 text-lg">{{ service.serviceName }}</h3>
-                <p class="px-3 pb-4">{{ service.description }}</p>
+                <h3 class="text-[#00AEAA] font-semibold px-3 text-lg">{{ service.serviceName }}</h3>
+                <p class="px-3 pb-4 text-[#004443]">{{ service.description }}</p>
             </div>
         </div>
         </div>
