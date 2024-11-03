@@ -34,6 +34,7 @@ export default {
     mounted() {
         // Initialize Swiper when the component is mounted
         new Swiper('.mySwiperGallery', {
+            cssMode: true,
             grid: {
                 rows: 2,
             },

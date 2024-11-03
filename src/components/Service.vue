@@ -111,13 +111,14 @@ export default {
         new Swiper('.mySwiper', {
             slidesPerView: 'auto',
             centeredSlides: false,
+            cssMode: true,
             spaceBetween: -50,
             loop: true,
             autoplay: {
-                delay: 2000,
+                delay: 6000,
                 disableOnInteraction: false,
             },
-            speed: 1000,
+            speed: 4000,
             pagination: {
                 el: '.custom-pagination',
                 clickable: true,
@@ -133,8 +134,9 @@ export default {
                     spaceBetween: 16,
                 },
                 1024: {
-                    slidesPerView: 3.2,
+                    slidesPerView: 4,
                     spaceBetween: 16,
+                    slidesPerGroup: 3
                 },
             },
         });

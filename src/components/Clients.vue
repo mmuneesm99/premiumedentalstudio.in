@@ -4,7 +4,7 @@
             <h2 class="text-[#004443] font-bold text-center md:text-left text-3xl mb-16">See the Difference</h2>
 
             <div class="swiper-container mySwiperClients pb-10 pl-4 md:pl-0 relative overflow-hidden">
-                <div class="swiper-wrapper h-[280px]">
+                <div class="swiper-wrapper h-[270px]">
                     <div v-for="(client, index) in clients" :key="index" class="swiper-slide flex justify-start" @click="toggleFlip(index)">
                         <div class="" :class="['flip-card', isFlipped[index] ? 'flipped ' : '', 'bg-transparent', 'flex', 'flex-col', 'items-start', 'w-[300px]']">
                             <div class="flip-card-inner md:rounded-3xl rounded-2xl">
@@ -54,6 +54,7 @@ export default {
         new Swiper('.mySwiperClients', {
             slidesPerView: 'auto',
             centeredSlides: false,
+            cssMode: true,
             spaceBetween: -50,
             loop: true,
             autoplay: {
@@ -76,8 +77,9 @@ export default {
                     spaceBetween: 16,
                 },
                 1024: {
-                    slidesPerView: 3.2,
+                    slidesPerView: 4,
                     spaceBetween: 16,
+                    slidesPerGroup: 4
                 },
             },
         });
