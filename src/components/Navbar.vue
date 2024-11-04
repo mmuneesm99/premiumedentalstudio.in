@@ -5,7 +5,7 @@
         <img loading="lazy" src="../assets/img/logo.svg" class="h-10 md:h-16" alt="Flowbite Logo" />
         <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Premiumdentalstudio</span> -->
       </a>
-      <button data-collapse-toggle="navbar-multi-level" type="button"
+      <button data-collapse-toggle="navbar-multi-level" type="button" id="toggleButton"
         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
         aria-controls="navbar-multi-level" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
@@ -18,46 +18,21 @@
         <ul
           class="flex  flex-col space-x-0 md:space-x-5 font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
           <li v-for="(item, index) in links" :key="index">
-            <router-link :class="[
-              'block transition-all duration-500 py-2 px-5 rounded-full',
+            <router-link @click="toggle()"  :class="[
+              'block transition-all duration-500 py-2 px-5 rounded-lg md:rounded-full',
               activeSection === item.id
                 ? 'bg-[#00AEAA] text-white border border-[#004443]'
                 : 'bg-transparent text-[#004443] hover:bg-[#00AEAA] hover:text-white hover:border hover:border-[#004443]'
             ]" :to="{ path: '/', hash: '#' + item.href }">
               {{ item.name }}
             </router-link>
-
-            <!-- <a  @click="navigateTo(item.href)"
-            :class="[
-                'block transition-all duration-500 py-2 px-5 rounded-full',
-                activeSection === item.id
-                  ? 'bg-[#00AEAA] text-white border border-[#004443]'
-                  : 'bg-transparent text-[#004443] hover:bg-[#00AEAA] hover:text-white hover:border hover:border-[#004443]'
-              ]">{{
-              item.name }}</a> -->
           </li>
-          <!-- <li>
-            <a href="#about-us"
-              class="block transition-all border-o bg-transparent duration-500 py-2  text-[#004443] hover:text-white hover:bg-[#00AEAA] px-5 hover:border hover:border-[#004443]  rounded-full">About us</a>
-          </li>
-          <li>
-            <a href="#services"
-              class="block transition-all border-o bg-transparent duration-500 py-2  text-[#004443] hover:text-white hover:bg-[#00AEAA] px-5 hover:border hover:border-[#004443]  rounded-full">Services</a>
-          </li>
-          <li>
-            <a href="#doctors"
-              class="block transition-all border-o bg-transparent duration-500 py-2  text-[#004443] hover:text-white hover:bg-[#00AEAA] px-5 hover:border hover:border-[#004443]  rounded-full">Doctors</a>
-          </li>
-          <li>
-            <a href="#testimonial"
-              class="block transition-all border-o bg-transparent duration-500 py-2  text-[#004443] hover:text-white hover:bg-[#00AEAA] px-5 hover:border hover:border-[#004443]  rounded-full">Reviews</a>
-          </li> -->
         </ul>
       </div>
       <div class="hidden md:block">
         <router-link :to="{ hash: '#contact-us' }" href="#contact-us"
           class="border border-black rounded-full pl-5 pr-1 py-1 flex items-center">Contact Us <i
-            class="bx ml-2 bg-[#004443] rounded-full px-1 py-1 text-[#FFF9F2] bx-phone"></i></router-link>
+            class="bx ml-2 bg-[#004443] rounded-full px-1 py-1 text-[#FFF9F2] bxs-phone"></i></router-link>
       </div>
     </div>
   </nav>
@@ -109,6 +84,9 @@ export default {
 
       // Set the active section based on the found element's ID or default to 'home'
       this.activeSection = section ? section.id : 'home';
+    },
+    toggle(){
+      document.getElementById('toggleButton').click()
     }
 
   },

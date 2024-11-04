@@ -48,20 +48,19 @@ export default {
     mounted() {
         // Initialize isFlipped based on the length of the doctors array
         this.isFlipped = Array(this.clients.length).fill(false);
-        this.startAutoFlip(); // Start automatic flipping
+        // this.startAutoFlip();
 
         // Initialize Swiper when the component is mounted
         new Swiper('.mySwiperClients', {
             slidesPerView: 'auto',
             centeredSlides: false,
-            cssMode: true,
             spaceBetween: -50,
             loop: true,
             autoplay: {
-                delay: 7500,
+                delay: 5000,
                 disableOnInteraction: false,
             },
-            speed: 3000,
+            speed: 5000,
             pagination: {
                 el: '.custom-pagination',
                 clickable: true,

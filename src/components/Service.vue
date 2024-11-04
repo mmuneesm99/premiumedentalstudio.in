@@ -60,7 +60,6 @@ export default {
             slidesPerView: 'auto',
             centeredSlides: false,
             slidesPerGroup: 1,
-            cssMode: true,
             spaceBetween: -50,
             loop: true,
             autoplay: {
