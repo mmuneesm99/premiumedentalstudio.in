@@ -1,17 +1,8 @@
 <template>
   <div id="app">
-    <!-- This is where the navigation will be rendered -->
-    <!-- <header>
-      <nav>
-        <router-link to="/">Home</router-link>
-        <router-link to="/about">About</router-link>
-        <router-link to="/services">Services</router-link>
-      </nav>
-    </header> -->
     <Navbar />
-
-    <main>
-      <router-view />
+    <main class="mx-auto">
+      <router-view  />
     </main>
     <ContactUs />
     <Footer />

@@ -1,7 +1,7 @@
 <template>
   <header id="home"  class=" h-auto  relative">
     <div  class="max-w-screen-xl flex flex-col mt-32 md:mt-[150px] items-center justify-center mx-auto px-4 md:px-0">
-      <div class="mb-6 sm:mb-0 sm:pr-8 text-center">
+      <div class="mb-6 sm:mb-0  text-center">
         <h1 class="text-balance text-4xl font-normal tracking-tight text-[#004443] lg:text-6xl 2xl:text-7xl">
           Your Journey to a Healthier,
         </h1>

@@ -2,8 +2,8 @@
     <section id="doctors" class="max-w-screen-xl h-auto flex flex-col py-6 mx-auto">
         <div>
             <h2 class="text-[#004443] font-bold text-center text-3xl px-4 mb-16">The Experts Behind Every Smile</h2>
-            <div class="bg-[#00AEAA] p-5 grid grid-cols-1 lg:grid-cols-3 space-x-0 md:space-x-6 space-y-4 md:space-y-0 mb-5 md:mb-0 md:rounded-3xl rounded-2xl">
-                <img loading="lazy" src="../assets/img/drkasim.avif" class="object-cover md:rounded-3xl rounded-2xl mx-auto w-full  h-[470px]" alt="Dr. Sayyid Kasim V" />
+            <div class="bg-[#00AEAA] p-5 mx-1 md:mx-0 grid grid-cols-1 lg:grid-cols-3 space-x-0 md:space-x-6 space-y-4 md:space-y-0 mb-5 md:mb-0 md:rounded-3xl rounded-3xl">
+                <img loading="lazy" src="../assets/img/drkasim.avif" class="object-cover md:rounded-3xl rounded-3xl mx-auto w-full  h-[470px]" alt="Dr. Sayyid Kasim V" />
                 <div class="col-span-2 flex flex-col justify-center space-y-5 text-[#FFF9F2]">
                     <h3 class="text-2xl md:text-4xl">Dr. Sayyid Kasim V</h3>
                     <hr>
@@ -32,7 +32,16 @@
                     </div>
                 </div>
 
-                <div class="swiper-pagination custom-pagination flex justify-center space-x-2"></div>
+                <div class="custome-pagination flex items-center w-fit mx-auto gap-2 mt-5">
+                    <!-- Custom Previous Button -->
+                    <div class="custom-prev-btn hidden md:flex">&#10094;</div>
+                    
+                    <!-- Pagination Dots -->
+                    <div class="pagination-dots flex space-x-2"></div>
+                    
+                    <!-- Custom Next Button -->
+                    <div class="custom-next-btn hidden md:flex">&#10095;</div>
+                </div>
             </div>
         </div>
     </section>
@@ -69,14 +78,19 @@ export default {
             slidesPerGroup: 1,
             spaceBetween: -50,
             loop: true,
-            autoplay: {
-                delay: 6000,
-                disableOnInteraction: false,
-            },
-            speed: 6000,
+            // autoplay: {
+            //     delay: 6000,
+            //     disableOnInteraction: false,
+            // },
+            autoplay:false,
+            speed: 3000,
             pagination: {
-                el: '.custom-pagination',
+                el: '.pagination-dots',
                 clickable: true,
+            },
+            navigation: {
+                nextEl: '.custom-next-btn', // Custom Next Button
+                prevEl: '.custom-prev-btn', // Custom Prev Button
             },
             breakpoints: {
                 640: {

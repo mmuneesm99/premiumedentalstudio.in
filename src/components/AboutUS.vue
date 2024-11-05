@@ -1,6 +1,6 @@
 <template>
     <div id="about-us" class="max-w-screen-xl h-auto flex flex-col mt-6 mx-auto">
-        <section class=" py-12 relative">
+        <section class=" py-12 relative px-1 md:px-0">
             <div class="max-w-full w-full mx-auto">
                 <!-- About Us Title -->
                 <h2 class="text-[#004443] font-semibold text-3xl text-center md:text-left mb-8">About Us</h2>
@@ -15,7 +15,7 @@
                         class="rounded-3xl -mb-14  shadow-md w-full object-cover" />
                 </div>
                 <div
-                    class="grid md:bg-transparent text-center md:text-left bg-[#00AEAA] px-4 pt-20 md:pt-0  rounded-t-[36px] md:rounded-none md:px-0 lg:grid-cols-3 gap-8 relative z-10">
+                    class="grid md:bg-transparent text-center md:text-left bg-[#00AEAA] px-4 pt-20 md:pt-0  rounded-t-3xl md:rounded-none md:px-0 lg:grid-cols-3 gap-8 relative z-10">
                     <!-- Image Section -->
                     <div class="ml-0 md:ml-5 col-span-2 rounded-3xl hidden md:block">
                         <img loading="lazy" src="../assets/img/premiumdentalstudio.avif" alt="Dental Clinic"

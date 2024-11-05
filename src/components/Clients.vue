@@ -22,7 +22,16 @@
                     </div>
                 </div>
 
-                <div class="swiper-pagination custom-pagination flex justify-center space-x-2"></div>
+                <div class="custome-pagination flex items-center w-fit mx-auto gap-2 mt-5">
+                    <!-- Custom Previous Button -->
+                    <div class="custom-prev-btn hidden md:flex">&#10094;</div>
+                    
+                    <!-- Pagination Dots -->
+                    <div class="pagination-dots flex space-x-2"></div>
+                    
+                    <!-- Custom Next Button -->
+                    <div class="custom-next-btn hidden md:flex">&#10095;</div>
+                </div>
             </div>
         </div>
     </section>
@@ -56,14 +65,15 @@ export default {
             centeredSlides: false,
             spaceBetween: -50,
             loop: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            speed: 5000,
+            autoplay:false,
+            speed: 3000,
             pagination: {
-                el: '.custom-pagination',
+                el: '.pagination-dots',
                 clickable: true,
+            },
+            navigation: {
+                nextEl: '.custom-next-btn', // Custom Next Button
+                prevEl: '.custom-prev-btn', // Custom Prev Button
             },
             breakpoints: {
                 640: {

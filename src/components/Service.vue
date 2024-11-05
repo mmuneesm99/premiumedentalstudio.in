@@ -17,16 +17,15 @@
                     </router-link>
                 </div>
 
-                <!-- Custom Pagination with Previous and Next buttons -->
-                <div class="swiper-pagination custom-pagination flex justify-center items-center space-x-2">
-                    <!-- Previous Button -->
-                    <div class="swiper-button-prev"></div>
-
-                    <!-- Pagination -->
+                <div class="custome-pagination flex items-center w-fit mx-auto gap-2 mt-5">
+                    <!-- Custom Previous Button -->
+                    <div class="custom-prev-btn hidden md:flex">&#10094;</div>
+                    
+                    <!-- Pagination Dots -->
                     <div class="pagination-dots flex space-x-2"></div>
-
-                    <!-- Next Button -->
-                    <div class="swiper-button-next"></div>
+                    
+                    <!-- Custom Next Button -->
+                    <div class="custom-next-btn hidden md:flex">&#10095;</div>
                 </div>
             </div>
 
@@ -35,6 +34,7 @@
 </template>
 
 <script>
+import { Autoplay } from 'swiper/modules';
 import departmentsData from '../assets/js/departments.json'
 export default {
     data() {
@@ -47,31 +47,33 @@ export default {
         getImageUrl(imageName) {
             return `${this.baseUrl}${imageName}`;
         },
-    }, created() {
+    }, 
+    created() {
         this.services = departmentsData.departments;
         console.log(this.services);
-
-
     },
     mounted() {
-
-        // Initialize Swiper when the component is mounted
+        // Initialize Swiper with navigation settings
         new Swiper('.mySwiper', {
             slidesPerView: 'auto',
             centeredSlides: false,
             slidesPerGroup: 1,
             spaceBetween: -50,
             loop: true,
-            autoplay: {
-                delay: 6000,
-                disableOnInteraction: false,
-            },
-            speed: 4000,
+            // autoplay: {
+            //     delay: 6000,
+            //     disableOnInteraction: false,
+            // },
+            autoplay:false,
+            speed: 2000,
             pagination: {
-                el: '.custom-pagination',
+                el: '.pagination-dots',
                 clickable: true,
             },
-
+            navigation: {
+                nextEl: '.custom-next-btn', // Custom Next Button
+                prevEl: '.custom-prev-btn', // Custom Prev Button
+            },
             breakpoints: {
                 640: {
                     slidesPerView: 1.6,
@@ -94,38 +96,19 @@ export default {
 };
 </script>
 
-<style scoped>
-/* Custom styles for pagination bullets */
-.swiper-container .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: #c4c4c4;
-    border-radius: 50%;
-    margin: 0 4px;
-    opacity: 0.6;
-    transition: all 0.3s;
-}
+<style>
 
-.swiper-pagination-bullet-active {
-    opacity: var(--swiper-pagination-bullet-opacity, 1);
-    background: var(--swiper-pagination-color, var(--swiper-theme-color));
 
-}
-
-/* Add hover effect */
-.swiper-container .swiper-pagination-bullet:hover {
-    background-color: #000000;
-    transform: scale(1.1);
-    opacity: 1;
-}
 
 .custom-prev-btn,
 .custom-next-btn {
     background-color: #004443;
     color: #ffffff;
     padding: 8px;
-    border-radius: 50%;
+    border-radius: 20%;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
 }
 
 .custom-prev-btn:hover,
