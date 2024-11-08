@@ -231,27 +231,27 @@
                 },
                 {
                     "serviceName": "Dental extraction",
-                    "description": "Consultation and treatment for corrective jaw surgery.",
+                    "description": "Procedure of removel tooth which cannot be saved",
                     "imageUrl":"services/dept9/service2.avif"
                 },
                 {
                     "serviceName": "Face Lesions",
-                    "description": "Specialized treatment for dental injuries sustained from road traffic accidents.",
+                    "description": "Treatment for any infections or swelling on the face",
                     "imageUrl":"services/dept9/service3.avif"
                 },
                 {
                     "serviceName": "Facial Suturing",
-                    "description": "Diagnosis and management of diseases affecting the maxillofacial region.",
+                    "description": "Suturing on the face due to any injury(Road traffic, accidents or fall) ",
                     "imageUrl":"services/dept9/service4.avif"
                 },
                 {
                     "serviceName": "Alveolar plasty",
-                    "description": "Surgical removal of impacted teeth.",
+                    "description": "Reshape the jaw bone to place dentures ",
                     "imageUrl":"services/dept9/service5.avif"
                 },
                 {
                     "serviceName": "Apicectomy",
-                    "description": "Surgical procedure to remove infection from the root tip of a tooth.",
+                    "description": "Removal of tip of the tooth to treat infection or cysts",
                     "imageUrl":"services/dept9/service6.avif"
                 }
             ],

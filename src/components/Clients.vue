@@ -1,7 +1,7 @@
 <template>
-    <section id="clients" class="max-w-screen-xl h-auto flex flex-col py-6 mx-auto">
+    <section id="clients" class="max-w-screen-xl h-auto flex flex-col mx-auto">
         <div>
-            <h2 class="text-[#004443] font-bold text-center md:text-left text-3xl mb-16">See the Difference</h2>
+            <h2 class="text-[#004443] font-bold text-center pt-5 md:text-left text-3xl mb-16">See the Difference</h2>
 
             <div class="swiper-container mySwiperClients pb-10 pl-4 md:pl-0 relative overflow-hidden">
                 <div class="swiper-wrapper h-[270px] py-2">
