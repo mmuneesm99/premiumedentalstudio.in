@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <Navbar />
-    <main class="mx-auto">
-      <router-view  />
+    <main>
+      <router-view />
     </main>
     <ContactUs />
     <Footer />
