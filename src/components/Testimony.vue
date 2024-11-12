@@ -8,18 +8,19 @@
                         class="max-h-[305px] object-cover h-full w-full" alt="Dr. Sayyid Kasim V" />
 
                 </div>
-                <!-- <div v-for="(reviews, i) in googleReviews " :key="i"
-                    class="bg-[#00AEAA] p-5 grid grid-rows-2 md:rounded-3xl rounded-2xl">
-                    <div class="w-fill flex justify-end">
-                        <img loading="lazy" :src="reviews.profile_photo_url" class="h-24 mr-5"
-                            alt="Dr. Sayyid Kasim V" />
+                <div v-for="(reviews, i) in googleReviews " :key="i" :class="i % 2 === 1 ? 'bg-[#00AEAA]' : 'bg-[#004443]'"
+                    class=" p-5 grid grid-rows-2 md:rounded-3xl rounded-2xl">
+                    <div class="w-fill flex justify-between items-center">
+                        <img class="h-[56px] opacity-80" src="../assets/img/google.png" alt="">
+                        <img :src="getProfileImage(reviews.profile_photo_url)" class="h-24 mr-5"
+                            :alt="reviews.author_name || 'Author Name'" />
                     </div>
                     <div class="flex-col justify-center space-y-5 text-[#FFF9F2]">
                         <h3 class="md:text-xl text-lg">{{ reviews.author_name }}</h3>
                         <p class="md:text-lg text-base italic max-w-lg">"{{ reviews.text }}"</p>
                     </div>
-                </div> -->
-                <div class="bg-[#00AEAA] p-5 grid grid-rows-2 md:rounded-3xl rounded-2xl">
+                </div>
+                <!-- <div class="bg-[#00AEAA] p-5 grid grid-rows-2 md:rounded-3xl rounded-2xl">
                     <div class="w-fill flex justify-end">
                         <img loading="lazy" src="../assets/img/avatar.svg" class="h-24 mr-5" alt="Dr. Sayyid Kasim V" />
                     </div>
@@ -58,7 +59,7 @@
                         <p class="md:text-lg text-base max-w-lg italic">"The care and attention I received were
                             outstanding. I trust Premium Dental Studio with all my dental needs."</p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -74,53 +75,55 @@ export default {
         };
     },
     mounted() {
-        // this.fetchRealEstateData()
+        this.fetchRealEstateData()
     },
     methods: {
         getImageUrl(imageName) {
             return `${this.baseUrl}${imageName}`;
         },
-        // async fetchRealEstateData() {
-        //     this.loading = true;
-        //     const apiKey = "AIzaSyCgdjx0OEvWhV2hqZ1N5aSzFw35t_mJTSY"; // Your API key
-        //     try {
-        //         // Specify the location based on the selected country
-        //         const response = await axios.get(
-        //             "/api/maps/api/place/details/json",
-        //             {
-        //                 params: {
-        //                     place_id: "ChIJSZ64hZ23pzsR2YK-1Ag6wmU",
-        //                     key: apiKey,
-        //                     fields: 'reviews'
-        //                 },
-        //             }
-        //         );
-        //         if (response.data.result && response.data.result.reviews) {
-        //             // Filter out reviews without text
-        //             this.googleReviews = response.data.result.reviews.filter(review => review.text && review.text.trim() !== '');
+        async fetchRealEstateData() {
+            this.loading = true;
+            const apiKey = "AIzaSyCgdjx0OEvWhV2hqZ1N5aSzFw35t_mJTSY"; // Your API key
+            try {
+                // Specify the location based on the selected country
+                const response = await axios.get("/api/place/details/json", {
+                    params: {
+                        place_id: "ChIJSZ64hZ23pzsR2YK-1Ag6wmU",
+                        key: apiKey,
+                        fields: 'reviews'
+                    },
+                });
+                if (response.data.result && response.data.result.reviews) {
+                    // Filter out reviews without text
+                    this.googleReviews = response.data.result.reviews
 
-        //             // Function to shuffle the reviews array
-        //             const shuffleArray = (array) => {
-        //                 for (let i = array.length - 1; i > 0; i--) {
-        //                     const j = Math.floor(Math.random() * (i + 1));
-        //                     [array[i], array[j]] = [array[j], array[i]]; // Swap elements
-        //                 }
-        //                 return array;
-        //             };
+                    // Function to shuffle the reviews array
+                    const shuffleArray = (array) => {
+                        for (let i = array.length - 1; i > 0; i--) {
+                            const j = Math.floor(Math.random() * (i + 1));
+                            [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+                        }
+                        return array;
+                    };
 
-        //             // Shuffle the reviews and take the first 4
-        //             this.googleReviews = shuffleArray(this.googleReviews).slice(0, 4);
-        //         } else {
-        //             this.googleReviews = []; // Handle case where there are no reviews
-        //         }
+                    // Shuffle the reviews and take the first 4
+                    this.googleReviews = shuffleArray(this.googleReviews).slice(0, 4);
+                } else {
+                    this.googleReviews = []; // Handle case where there are no reviews
+                }
 
 
-        //     } catch (error) {
-        //         console.error("Error fetching data:", error);
-        //     } finally {
-        //         this.loading = false;
-        //     }
-        // },
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            } finally {
+                this.loading = false;
+            }
+        },
+        getProfileImage(url) {
+            url = ''
+            const profileUrl = url!==''?url:'https://premiumdentalstudio.in/avatar.svg'
+            return profileUrl
+        }
     },
 };
 </script>
