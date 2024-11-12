@@ -231,7 +231,7 @@
                 },
                 {
                     "serviceName": "Dental extraction",
-                    "description": "Procedure of removel tooth which cannot be saved",
+                    "description": "Procedure of removal of tooth which cannot be saved",
                     "imageUrl":"services/dept9/service2.avif"
                 },
                 {
@@ -241,7 +241,7 @@
                 },
                 {
                     "serviceName": "Facial Suturing",
-                    "description": "Suturing on the face due to any injury(Road traffic, accidents or fall) ",
+                    "description": "Suturing on the face due to any injury(Road traffic accidents or fall) ",
                     "imageUrl":"services/dept9/service4.avif"
                 },
                 {
