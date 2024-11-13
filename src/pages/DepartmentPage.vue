@@ -1,5 +1,5 @@
 <template>
-    <header id="" v-if="department" class=" h-auto  relative">
+    <header id="" v-if="department" class="h-auto relative">
         <div class="max-w-screen-xl flex flex-col mt-[150px] items-center justify-center mx-auto px-4 md:px-0">
             <div class="mb-10 sm:mb-0 sm:pr-8 text-center">
                 <h1 class="text-balance text-4xl font-semibold tracking-tight text-[#004443] lg:text-6xl 2xl:text-7xl">
@@ -15,24 +15,24 @@
                     <img loading="lazy" class="w-full mt-5 md:mt-10 relative object-cover rounded-3xl"
                         :src="getImageUrl(department.banner)" :alt="department.name">
                 </div>
-                
             </div>
         </div>
     </header>
-    <div class="max-w-screen-xl h-auto  mx-auto px-4 md:px-0">
+
+    <div class="max-w-screen-xl h-auto mx-auto px-4 md:px-0">
         <div class="py-16">
             <h2 class="text-[#004443] font-bold text-center text-3xl md:text-4xl">In-Depth Care Services</h2>
         </div>
         <div class="flex flex-wrap gap-6 justify-center pb-12">
             <div class=" flex justify-center" v-for="(service, index) in department.services" :key="index">
-            <div
-                class="bg-white shadow-md overflow-hidden relative rounded-3xl  flex flex-col items-start  md:w-[300px]">
-                <img :src="getImageUrl(service.imageUrl)" alt="Root Canal Treatment" loading="lazy"
-                    class="rounded-t-lg mb-4" />
-                <h3 class="text-[#00AEAA] font-semibold px-3 text-lg">{{ service.serviceName }}</h3>
-                <p class="px-3 pb-4 text-[#004443]">{{ service.description }}</p>
+                <div
+                    class="bg-white shadow-md overflow-hidden relative rounded-3xl flex flex-col items-start md:w-[300px]">
+                    <img :src="getImageUrl(service.imageUrl)" alt="Root Canal Treatment" loading="lazy"
+                        class="rounded-t-lg mb-4" />
+                    <h3 class="text-[#00AEAA] font-semibold px-3 text-lg">{{ service.serviceName }}</h3>
+                    <p class="px-3 pb-4 text-[#004443]">{{ service.description }}</p>
+                </div>
             </div>
-        </div>
         </div>
     </div>
 </template>
@@ -50,13 +50,35 @@ export default {
     methods: {
         getImageUrl(url) {
             return this.department ? "https://mmuneesm99.github.io/imagecloude/" + url : ''
+        },
+        updateMetaTags() {
+            if (this.department) {
+                // Update the title dynamically
+                document.title = `${this.department.name} - In-Depth Care Services`;
+
+                // Update meta description
+                const metaDescription = document.querySelector('meta[name="description"]');
+                if (metaDescription) {
+                    metaDescription.setAttribute('content', this.department.description);
+                }
+
+                // Update meta keywords based on services
+                const metaKeywords = document.querySelector('meta[name="keywords"]');
+                if (metaKeywords) {
+                    const serviceNames = this.department.services.map(service => service.serviceName).join(', ');
+                    metaKeywords.setAttribute('content', `${this.department.name}, ${serviceNames}`);
+                }
+            }
         }
     },
     created() {
         // Find the department based on the route parameter (department name)
         this.department = departmentsData.departments.find(
             dept => dept.name === this.name
-        )
+        );
+    },
+    mounted() {
+        this.updateMetaTags();
     }
 }
 </script>
