@@ -50,7 +50,6 @@ export default {
     }, 
     created() {
         this.services = departmentsData.departments;
-        console.log(this.services);
     },
     mounted() {
         // Initialize Swiper with navigation settings
