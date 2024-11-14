@@ -13,7 +13,7 @@
         <img loading="lazy"  class="min-h-[200px] object-cover rounded-3xl" src="../assets/img/banner.avif" alt="Premium Dental Studio">
       </div>
       <div class="block md:hidden pt-8">
-        <a href="#contact-us" class="border border-black rounded-full pl-5 pr-1 py-2 flex items-center">Get in touch<i class="bx ml-2 bg-[#004443] rounded-full px-2 py-2 text-[#FFF9F2] bxs-phone"></i></a>
+        <router-link :to="{ hash: '#contact-us' }" class="border border-black rounded-full pl-5 pr-1 py-2 flex items-center">Get in touch<i class="bx ml-2 bg-[#004443] rounded-full px-2 py-2 text-[#FFF9F2] bxs-phone"></i></router-link>
       </div>
     </div>
   </header>

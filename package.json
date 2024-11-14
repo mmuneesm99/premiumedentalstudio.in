@@ -10,7 +10,7 @@
     "debug": "vite --debug",
     "preview": "vite preview",
     "clean": "rmdir /s /q node_modules\\.cache",
-    "deploy": "npm run clean && gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",

@@ -64,9 +64,10 @@ export default {
             slidesPerView: 'auto',
             centeredSlides: false,
             spaceBetween: -50,
+            slidesPerGroup: 1,
             loop: true,
             autoplay:false,
-            speed: 3000,
+            speed: 500,
             pagination: {
                 el: '.pagination-dots',
                 clickable: true,
@@ -80,17 +81,21 @@ export default {
                     slidesPerView: 1.6,
                     spaceBetween: -50,
                     slidesPerGroup: 1,
+                    speed: 2000,
 
                 },
                 768: {
                     slidesPerView: 2.2,
                     spaceBetween: 16,
-                    slidesPerGroup: 2
+                    slidesPerGroup: 2,
+                    speed: 2000,
                 },
                 1024: {
                     slidesPerView: 4,
                     spaceBetween: 16,
-                    slidesPerGroup: 4
+                    slidesPerGroup: 4,
+                    speed: 2000,
+
                 },
             },
         });

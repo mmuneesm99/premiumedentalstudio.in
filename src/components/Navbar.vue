@@ -30,7 +30,7 @@
         </ul>
       </div>
       <div class="hidden md:block">
-        <router-link :to="{ hash: '#contact-us' }" href="#contact-us"
+        <router-link :to="{ hash: '#contact-us' }"
           class="border border-black rounded-full pl-5 pr-1 py-1 flex items-center">Contact Us <i
             class="bx ml-2 bg-[#004443] rounded-full px-1 py-1 text-[#FFF9F2] bxs-phone"></i></router-link>
       </div>
