@@ -29,7 +29,7 @@
                             :class="['flip-card', isFlipped[index] ? 'flipped ' : '', 'bg-transparent', 'flex', 'flex-col', 'items-start', 'w-[300px]']">
                             <div class="flip-card-inner md:rounded-3xl rounded-2xl">
                                 <div class="flip-card-front bg-white p-2 shadow-md relative overflow-hidden">
-                                    <img loading="lazy" :src="getImageUrl(doctor.image)" :alt="doctor.name"
+                                    <img loading="lazy" :src="getImageUrl(doctor.image)" :alt="doctor.name+' '+doctor.specialty"
                                         class="md:rounded-3xl rounded-2xl mb-4" />
                                     <h3 class="text-[#00AEAA] font-semibold text-center px-3 text-lg">{{ doctor.name }}
                                     </h3>
