@@ -3,10 +3,12 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 // Lazy load components
 const Home = () => import('./pages/Home.vue');
 const DepartmentPage = () => import('./pages/DepartmentPage.vue');
+const Launcher = () => import('./pages/Launcher.vue');
 // const NotFound = () => import('./pages/NotFound.vue'); 
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
+  { path: '/launch', name: 'Launch ',component : Launcher },
   {
     path: '/department/:name',
     name: 'Department',
