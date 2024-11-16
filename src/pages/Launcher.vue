@@ -9,8 +9,8 @@
       </h1>
     </div> -->
     <img loading="lazy" src="../assets/img/logo.svg" class="h-10 md:h-16" alt="Premium Dental studio Logo" />
-    <button @click="startCelebration" class="launch-btn border-4 tracking-tight border-white">Launch Website</button>
-    <div v-show="countdown > 0"  id="counter">Countdown: 00:{{ countdown }}</div>
+    <button v-show="countdown < 0" @click="startCelebration" class="launch-btn border-4 tracking-tight border-white">Launch Website</button>
+    <div v-show="countdown > 0"  id="counter">Countdown: 00:0{{ countdown }}</div>
     <canvas id="fireworks" v-if="countdown === 0"></canvas>
   </div>
 </template>
@@ -19,7 +19,7 @@
 export default {
   data() {
     return {
-      countdown: 5, // Starting countdown value
+      countdown: 3, // Starting countdown value
     };
   },
   methods: {
