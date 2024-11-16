@@ -15,7 +15,7 @@
     >
       Launch Website
     </button>
-    <div v-show="countdown > 0" id="counter" class="font-bold text-3xl">
+    <div v-show="countdown > 0 && isCount" id="counter" class="font-bold text-3xl">
       Countdown: 00:0{{ countdown }}
     </div>
     <canvas id="fireworks" v-if="countdown === 0"></canvas>
@@ -27,10 +27,12 @@ export default {
   data() {
     return {
       countdown: 5, // Starting countdown value
+      isCount:false
     };
   },
   methods: {
     startCelebration() {
+      this.isCount = true;
       if (this.countdown > 0) {
         const countdownInterval = setInterval(() => {
           if (this.countdown > 0) {
@@ -64,7 +66,7 @@ export default {
           particle.y += particle.dy;
           ctx.fillStyle = particle.color;
           ctx.beginPath();
-          ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+          ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 10);
           ctx.fill();
         });
         requestAnimationFrame(animateFireworks);
