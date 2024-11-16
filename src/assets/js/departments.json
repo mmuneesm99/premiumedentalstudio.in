@@ -253,6 +253,11 @@
                     "serviceName": "Apicectomy",
                     "description": "Removal of tip of the tooth to treat infection or cysts",
                     "imageUrl":"services/dept9/service6.avif"
+                },
+                {
+                    "serviceName": "Disimpaction of tooth",
+                    "description": "Removal of tooth, which lodges under the jaw bone",
+                    "imageUrl":"services/dept9/service7.avif"
                 }
             ],
             "imageUrl": "depts/dept2.avif",
