@@ -1,16 +1,23 @@
 <template>
   <div class="h-screen flex gap-5 justify-center items-center flex-col">
-    <!-- <div class="mb-6 sm:mb-0  text-center">
-      <h1 class="text-balance text-4xl font-normal tracking-tight text-[#004443] lg:text-6xl 2xl:text-7xl">
-        Your Journey to a Healthier,
-      </h1>
-      <h1 class="text-balance text-4xl font-semibold tracking-tight text-[#004443] lg:text-6xl 2xl:text-7xl">
-        Brighter Smile Starts Here
-      </h1>
-    </div> -->
-    <img loading="lazy" src="../assets/img/logo.svg" class="h-10 md:h-16" alt="Premium Dental studio Logo" />
-    <button v-show="countdown > 0" @click="startCelebration" class="launch-btn border-4 tracking-tight border-white">Launch Website</button>
-    <div v-show="countdown > 0"  id="counter">Countdown: 00:0{{ countdown }}</div>
+    <!-- Logo with a conditional class for scaling -->
+    <img
+      loading="lazy"
+      :class="{ 'scale-logo': countdown === 0 }"
+      src="../assets/img/logo.svg"
+      class="h-10 md:h-16 transition-transform duration-1000"
+      alt="Premium Dental Studio Logo"
+    />
+    <button
+      v-show="countdown > 0"
+      @click="startCelebration"
+      class="launch-btn animate-pulse hover:scale-x-105 duration-[3s] transition-all border-4 tracking-tight border-white"
+    >
+      Launch Website
+    </button>
+    <div v-show="countdown > 0" id="counter" class="font-bold text-3xl">
+      Countdown: 00:0{{ countdown }}
+    </div>
     <canvas id="fireworks" v-if="countdown === 0"></canvas>
   </div>
 </template>
@@ -64,8 +71,8 @@ export default {
       };
       animateFireworks();
       setTimeout(() => {
-        window.location.href = "/"
-      }, 5000)
+        window.location.href = "/";
+      }, 3000);
     },
   },
 };
@@ -84,7 +91,6 @@ export default {
 }
 
 #counter {
-  font-size: 20px;
   margin-top: 10px;
 }
 
@@ -96,5 +102,10 @@ export default {
   height: 100%;
   pointer-events: none;
   z-index: 999;
+}
+
+/* New CSS class for scaling the logo */
+.scale-logo {
+  transform: scale(2); /* Scale the logo 1.5 times */
 }
 </style>
