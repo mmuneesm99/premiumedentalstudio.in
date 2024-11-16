@@ -7,12 +7,12 @@
                     <h4 class="font-semibold text-xl">Contact Us</h4>
                     <p class="text-sm">Address : Sayyid complex, Perinthalmanna road Valanchery, Malappuram,
                         Kerala,India</p>
-                    <p class="text-sm">Email : Contact@premiumdentalstudio.com
-                       <br> Phone : 91 9645 622262, 0494 2642262</p>
+                    <p class="text-sm">Email : <a href="mailto:contact@premiumdentalstudio.com">contact@premiumdentalstudio.com</a>
+                       <br> Phone : <a href="tel:91 9645 622262">+91 9645 622262</a>, 0494 2642262</p>
                 </div>
                 <div class="text-[#D9D9D9] space-y-3">
                     <h4 class="font-semibold text-xl">For Booking</h4>
-                    <p class="text-sm">Phone : +91 9645 622262,
+                    <p class="text-sm">Phone : <a href="tel:+91 9645 622262">+91 9645 622262</a>,
                         04942642262 </p>
                     <p class="text-sm">Working time : 9:30 am to 7.30 pm (Sunday consultation ; prior appoinments only)
                     </p>

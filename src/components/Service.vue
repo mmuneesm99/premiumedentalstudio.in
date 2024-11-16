@@ -57,7 +57,7 @@ export default {
             slidesPerView: 'auto',
             centeredSlides: false,
             slidesPerGroup: 1,
-            spaceBetween: -50,
+            spaceBetween: -20,
             loop: true,
             // autoplay: {
             //     delay: 6000,

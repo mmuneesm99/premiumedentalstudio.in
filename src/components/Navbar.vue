@@ -2,7 +2,7 @@
   <nav class="bg-white fixed top-0 w-screen z-50 border-gray-200">
     <div class="max-w-screen-xl border-b border-black flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-          
+          <img loading="lazy" src="../assets/img/logo.svg" class="h-10 md:h-16" alt="Premium Dental studio Logo" />
         <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Premiumdentalstudio</span> -->
       </a>
       <button data-collapse-toggle="navbar-multi-level" type="button" id="toggleButton"
