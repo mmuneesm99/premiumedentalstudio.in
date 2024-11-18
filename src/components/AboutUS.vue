@@ -11,14 +11,14 @@
                     EXCEPTIONAL DENTAL CARE
                 </h3>
                 <div data-aos="fade-up" class="ml-0 md:ml-5 col-span-2 px-8 relative z-20  rounded-3xl block md:hidden">
-                    <img loading="lazy" src="../assets/img/premiumdentalstudio.avif" alt="Dental Clinic"
+                    <img loading="lazy" src="../assets/img/premiumdentalstudio.avif" alt="Dental Clinic Valanchry"
                         class="rounded-3xl -mb-14  shadow-md w-full object-cover" />
                 </div>
                 <div
                     class="grid md:bg-transparent text-center md:text-left bg-[#00AEAA] px-4 pt-20 md:pt-0  rounded-t-3xl md:rounded-none md:px-0 lg:grid-cols-3 gap-8 relative z-10">
                     <!-- Image Section -->
                     <div class="ml-0 md:ml-5 col-span-2 rounded-3xl hidden md:block">
-                        <img loading="lazy" src="../assets/img/premiumdentalstudio.avif" alt="Dental Clinic"
+                        <img loading="lazy" src="../assets/img/premiumdentalstudio.avif" alt="Best Dental Clinic in Valanchry"
                             class="rounded-3xl shadow-md w-full object-cover" />
                     </div>
 
@@ -59,7 +59,7 @@
                         </div>
                     </div>
                     <div class="md:order-3 order-2">
-                        <img loading="lazy" src="../assets/img/premiumdentalstudio2.avif" alt="Mission Image"
+                        <img loading="lazy" src="../assets/img/premiumdentalstudio2.avif" alt="Best Premium dental studio"
                             class="rounded-3xl shadow-md  w-full object-cover" />
                     </div>
                 </div>

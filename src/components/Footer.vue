@@ -2,13 +2,13 @@
     <div id="footer" class="bg-[#004443] rounded-t-3xl py-5">
         <div class="max-w-screen-xl h-auto flex flex-col px-4 mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-3 text-center md:text-left gap-8 py-5">
-                <div class="py-3 mx-auto md:mx-0"><img loading="lazy" class="h-16 md:h-20" src="../assets/img/logo-white.svg" alt=""></div>
+                <div class="py-3 mx-auto md:mx-0"><img loading="lazy" class="h-16 md:h-20" src="../assets/img/logo-white.svg" alt="Best Dental studio, Premium dental clinic or studio"></div>
                 <div class="text-[#D9D9D9] space-y-3">
                     <h4 class="font-semibold text-xl">Contact Us</h4>
                     <p class="text-sm">Address : Sayyid complex, Perinthalmanna road Valanchery, Malappuram,
                         Kerala,India</p>
-                    <p class="text-sm">Email : <a href="mailto:contact@premiumdentalstudio.com">contact@premiumdentalstudio.com</a>
-                       <br> Phone : <a href="tel:91 9645 622262">+91 9645 622262</a>, 0494 2642262</p>
+                    <p class="text-sm">Email : <a href="mailto:contact@premiumdentalstudio.com" title="contact premium dental studio]">contact@premiumdentalstudio.com</a>
+                       <br> Phone : <a title="contact premium dental studio" href="tel:91 9645 622262">+91 9645 622262</a>, 0494 2642262</p>
                 </div>
                 <div class="text-[#D9D9D9] space-y-3">
                     <h4 class="font-semibold text-xl">For Booking</h4>

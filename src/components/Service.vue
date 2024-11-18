@@ -10,7 +10,7 @@
                         v-for="(service, index) in services" :key="index">
                         <div
                             class="bg-white border border-[#00444385] overflow-hidden relative rounded-3xl flex flex-col items-start w-[300px]">
-                            <img :src="getImageUrl(service.imageUrl)" alt="Root Canal Treatment" loading="lazy"
+                            <img :src="getImageUrl(service.imageUrl)" alt="Best dental clinic" loading="lazy"
                                 class="rounded-t-lg mb-4" />
                             <h3 class="text-[#00AEAA] font-semibold px-3 pb-4 text-lg">{{ service.name }}</h3>
                         </div>
@@ -54,10 +54,10 @@ export default {
     mounted() {
         // Initialize Swiper with navigation settings
         new Swiper('.mySwiper', {
-            slidesPerView: 'auto',
+            slidesPerView: 1.2,
             centeredSlides: false,
             slidesPerGroup: 1,
-            spaceBetween: -20,
+            spaceBetween: 20,
             loop: true,
             // autoplay: {
             //     delay: 6000,

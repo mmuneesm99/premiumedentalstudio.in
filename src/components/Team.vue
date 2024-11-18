@@ -65,7 +65,7 @@ export default {
             isFlipped: [],
             baseUrl: 'https://mmuneesm99.github.io/imagecloude/',
             doctors: [
-                { name: "Dr. SUHA SUNAYYA K.F", image: "doctor1.avif", qualification: "BDS", specialty: "[RESIDENT DENTAL SURGEON, COSMETIC DENTIST]" },
+                { name: "Dr. SUHA SUNAYYA K.F", image: "doctor1.avif", qualification: "BDS", specialty: "[RESIDENT DENTAL SURGEON], Aesthetic dentist" },
                 { name: "Dr. SIJI CHIRAMEL", image: "doctor2.avif", qualification: "BDS, MDS", specialty: "[CONSULTANT MAXILLOFACIAL SURGEON]  Prof. and H. O. D Dept. of DENTISTRY AND  MAXILLOFACIAL SURGERY. AMALA INSTITUTE OF  MEDICAL SCIENCE" },
                 { name: "Dr. MOHAMMED ASLIF", image: "doctor3.avif", qualification: "BDS, MDS", specialty: "[CONSULTANT ORAL AND MAXILLOFACIAL SURGEON, IMPLANTOLOGIST]" },
                 { name: "Dr. SHAHANA VP", image: "doctor4.avif", qualification: "BDS, MDS", specialty: "[CONSULTANT ORTHODONTIST AND DENTOFACIAL ORTHOPEDICIAN ]  Asst. Prof. MES Dental college" },
@@ -85,11 +85,11 @@ export default {
 
         // Initialize Swiper when the component is mounted
         new Swiper('.mySwiperTeam', {
-            slidesPerView: 'auto',
+            slidesPerView: 1.2,
             centeredSlides: false,
             slidesPerGroup: 1,
-            spaceBetween: -50,
             loop: true,
+            spaceBetween: 20,
             // autoplay: {
             //     delay: 6000,
             //     disableOnInteraction: false,
@@ -107,7 +107,7 @@ export default {
             breakpoints: {
                 640: {
                     slidesPerView: 1.6,
-                    spaceBetween: -50,
+                    spaceBetween: 20,
                     slidesPerGroup: 1,
                     speed: 500,
                 },

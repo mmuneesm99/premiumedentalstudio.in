@@ -32,7 +32,7 @@
                 </div>
                 <div class="bg-[#004443] p-5 grid grid-rows-2 md:rounded-3xl rounded-2xl">
                     <div class="w-fill flex justify-end">
-                        <img loading="lazy" src="../assets/img/avatar.svg" class="h-20 mr-5" alt="Dr. Sayyid Kasim V" />
+                        <img loading="lazy" src="../assets/img/avatar.svg" class="h-20 mr-5" alt="Dr. Sayyid Kasim V , Best Dental Clinic" />
                     </div>
                     <div class="flex-col justify-center space-y-5 text-[#FFF9F2]">
                         <h3 class="md:text-xl text-lg">Mustafa</h3>

@@ -61,9 +61,9 @@ export default {
 
         // Initialize Swiper when the component is mounted
         new Swiper('.mySwiperClients', {
-            slidesPerView: 'auto',
+            slidesPerView:1.2,
             centeredSlides: false,
-            spaceBetween: -50,
+            spaceBetween: 20,
             slidesPerGroup: 1,
             loop: true,
             autoplay:false,
