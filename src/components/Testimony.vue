@@ -8,19 +8,20 @@
                         class="max-h-[305px] object-cover h-full w-full" alt="Dr. Sayyid Kasim V" />
 
                 </div>
-                <!-- <div v-for="(reviews, i) in googleReviews " :key="i" :class="i % 2 === 1 ? 'bg-[#00AEAA]' : 'bg-[#004443]'"
+                <div v-for="(reviews, i) in filterdData " :key="i"
+                    :class="i % 2 === 1 ? 'bg-[#00AEAA]' : 'bg-[#004443]'"
                     class=" p-5 grid grid-rows-2 md:rounded-3xl rounded-2xl">
                     <div class="w-fill flex justify-between items-center">
-                        <img class="h-[56px] opacity-80" src="../assets/img/google.png" alt="">
-                        <img :src="getProfileImage(reviews.profile_photo_url)" class="h-24 mr-5"
-                            :alt="reviews.author_name || 'Author Name'" />
+                        <img class="h-[48px] opacity-80 -mt-12 ml-2" src="../assets/img/google.svg" alt="">
+                        <img src="https://premiumdentalstudio.in/avatar.svg" class="h-24 mr-5"
+                            alt="Best Dental Clinic in valanchery" />
                     </div>
                     <div class="flex-col justify-center space-y-5 text-[#FFF9F2]">
-                        <h3 class="md:text-xl text-lg">{{ reviews.author_name }}</h3>
-                        <p class="md:text-lg text-base italic max-w-lg">"{{ reviews.text }}"</p>
+                        <h3 class="md:text-xl text-lg">{{ reviews.name }}</h3>
+                        <p class="md:text-lg text-base italic max-w-lg">"{{ reviews.review }}"</p>
                     </div>
-                </div> -->
-                <div class="bg-[#00AEAA] p-5 grid grid-rows-2 md:rounded-3xl rounded-2xl">
+                </div>
+                <!-- <div class="bg-[#00AEAA] p-5 grid grid-rows-2 md:rounded-3xl rounded-2xl">
                     <div class="w-fill flex justify-end">
                         <img loading="lazy" src="../assets/img/avatar.svg" class="h-24 mr-5" alt="Dr. Sayyid Kasim V" />
                     </div>
@@ -59,7 +60,7 @@
                         <p class="md:text-lg text-base max-w-lg italic">"The care and attention I received were
                             outstanding. I trust Premium Dental Studio with all my dental needs."</p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -71,11 +72,22 @@ export default {
     data() {
         return {
             baseUrl: 'https://mmuneesm99.github.io/imagecloude/',
-            googleReviews: []
+            googleReviews: [
+                { name: "Ayesha Fathima", review: "Great experience and excellent care. Highly recommended!" },
+                { name: "Mohammed Riyaz", review: "Very professional service and friendly staff. Very satisfied!" },
+                { name: "Zainab Ali", review: "Wonderful care and great results. The team is amazing!" },
+                { name: "Imran Ahmed", review: "Top-notch service, clean environment, and skilled professionals." },
+                { name: "Safiya K.", review: "Excellent treatment and caring staff. Would recommend to everyone!" },
+                { name: "Lakshmi Menon", review: "Premium Dental Studio at Valanchery exceeded my expectations. Dr. Kasim’s expertise shows  quality of care" },
+                { name: "Riyas Puthur", review: "My dental procedure went smoothly, very happy with the results. Great attention to patient comfort!" },
+                { name: "Divya Rajan", review: "Had an excellent experience here! Highly recommended for dentalcare." },
+            ],
+            filterdData: []
         };
     },
     mounted() {
-        // this.fetchRealEstateData()
+        this.fetchRealEstateData()
+
     },
     methods: {
         getImageUrl(imageName) {
@@ -119,10 +131,20 @@ export default {
         //         this.loading = false;
         //     }
         // },
-        getProfileImage(url) {
-          const profileUrl = url!==''?url:'https://premiumdentalstudio.in/avatar.svg'
-            return profileUrl
-        }
+        fetchRealEstateData() {
+            const shuffleArray = (array) => {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+                }
+                return array;
+            };
+            this.filterdData = shuffleArray(this.googleReviews).slice(0, 4);
+        },
+        // getProfileImage(url) {
+        //     const profileUrl = url !== '' ? url : 'https://premiumdentalstudio.in/avatar.svg'
+        //     return profileUrl
+        // }
     },
 };
 </script>

@@ -65,7 +65,7 @@ export default {
             isFlipped: [],
             baseUrl: 'https://mmuneesm99.github.io/imagecloude/',
             doctors: [
-                { name: "Dr. SUHA SUNAYYA K.F", image: "doctor1.avif", qualification: "BDS", specialty: "[RESIDENT DENTAL SURGEON], Aesthetic dentist" },
+                { name: "Dr. SUHA SUNAYYA K.F", image: "doctor1.avif", qualification: "BDS", specialty: "[RESIDENT DENTAL SURGEON], AESTHETIC DENTIST" },
                 { name: "Dr. SIJI CHIRAMEL", image: "doctor2.avif", qualification: "BDS, MDS", specialty: "[CONSULTANT MAXILLOFACIAL SURGEON]  Prof. and H. O. D Dept. of DENTISTRY AND  MAXILLOFACIAL SURGERY. AMALA INSTITUTE OF  MEDICAL SCIENCE" },
                 { name: "Dr. MOHAMMED ASLIF", image: "doctor3.avif", qualification: "BDS, MDS", specialty: "[CONSULTANT ORAL AND MAXILLOFACIAL SURGEON, IMPLANTOLOGIST]" },
                 { name: "Dr. SHAHANA VP", image: "doctor4.avif", qualification: "BDS, MDS", specialty: "[CONSULTANT ORTHODONTIST AND DENTOFACIAL ORTHOPEDICIAN ]  Asst. Prof. MES Dental college" },
