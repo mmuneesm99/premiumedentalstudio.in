@@ -18,20 +18,21 @@
                     class="grid md:bg-transparent text-center md:text-left bg-[#00AEAA] px-4 pt-20 md:pt-0  rounded-t-3xl md:rounded-none md:px-0 lg:grid-cols-3 gap-8 relative z-10">
                     <!-- Image Section -->
                     <div class="ml-0 md:ml-5 col-span-2 rounded-3xl hidden md:block">
-                        <img loading="lazy" src="../assets/img/premiumdentalstudio.avif" alt="Best Dental Clinic in Valanchry"
-                            class="rounded-3xl shadow-md w-full object-cover" />
+                        <img loading="lazy" src="../assets/img/premiumdentalstudio.avif"
+                            alt="Best Dental Clinic in Valanchry" class="rounded-3xl shadow-md w-full object-cover" />
                     </div>
 
                     <!-- Text Section -->
                     <div class="flex text-[#FFF9F2] md:text-[#004443] flex-col text-base md:text-xl justify-start">
                         <p class="mb-4">
-                            At Premium Dental Studio, we blend cutting-edge technology with personalized care to offer a
-                            top-tier dental experience. Our expert team provides a full range of services, from routine
-                            cleanings to advanced cosmetic treatments, all in a comfortable, welcoming space.
+                            At Premium Dental Studio, the best dental clinic in Valanchery, we blend advanced dental
+                            technology with personalized care to offer a premium experience. Our expert team provides
+                            services from routine cleanings to cosmetic treatments, all in a warm, welcoming space.
                         </p>
                         <p class="">
-                            We prioritize your oral health and are dedicated to creating confident, beautiful smiles.
-                            Every patient receives exceptional, tailored care to meet their unique needs.
+                            We prioritize your oral health and are committed to creating confident, radiant smiles. Each
+                            patient receives customized dental care tailored to their unique needs, ensuring comfort and
+                            satisfaction.
                         </p>
                     </div>
                 </div>
@@ -59,8 +60,8 @@
                         </div>
                     </div>
                     <div class="md:order-3 order-2">
-                        <img loading="lazy" src="../assets/img/premiumdentalstudio2.avif" alt="Best Premium dental studio"
-                            class="rounded-3xl shadow-md  w-full object-cover" />
+                        <img loading="lazy" src="../assets/img/premiumdentalstudio2.avif"
+                            alt="Best Premium dental studio" class="rounded-3xl shadow-md  w-full object-cover" />
                     </div>
                 </div>
             </div>

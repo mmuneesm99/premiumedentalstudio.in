@@ -3,8 +3,8 @@
         <div class="bg-[#0CB2AE] text-[#FFF9F2] rounded-3xl p-4 md:p-8 grid gap-8 grid-cols-1 md:grid-cols-2">
             <div class="space-y-5">
                 <h3 class=" text-2xl md:text-3xl">Get in touch with us</h3>
-                <p class="text-base md:text-lg">Have a question or need to book an appointment? We’re here to help! Fill out the form below, and our
-                    team will get back to you shortly.</p>
+                <p class="text-base md:text-lg">Have a question or need to schedule a dental appointment? We’re here to assist you! Simply fill out the form below, and our expert team will get in touch with you shortly to provide the best dental care.
+</p>
                 <form @submit.prevent="submitForm" id="submit-form" class="space-y-3">
                     <div class="flex flex-col">
                         <label for="name">Name</label>

@@ -73,15 +73,16 @@ export default {
         return {
             baseUrl: 'https://mmuneesm99.github.io/imagecloude/',
             googleReviews: [
-                { name: "Ayesha Fathima", review: "Great experience and excellent care. Highly recommended!" },
-                { name: "Mohammed Riyaz", review: "Very professional service and friendly staff. Very satisfied!" },
-                { name: "Zainab Ali", review: "Wonderful care and great results. The team is amazing!" },
-                { name: "Imran Ahmed", review: "Top-notch service, clean environment, and skilled professionals." },
-                { name: "Safiya K.", review: "Excellent treatment and caring staff. Would recommend to everyone!" },
-                { name: "Lakshmi Menon", review: "Premium Dental Studio at Valanchery exceeded my expectations. Dr. Kasim’s expertise shows  quality of care" },
-                { name: "Riyas Puthur", review: "My dental procedure went smoothly, very happy with the results. Great attention to patient comfort!" },
-                { name: "Divya Rajan", review: "Had an excellent experience here! Highly recommended for dentalcare." },
+                { name: "Ayesha Fathima", review: "Had a wonderful experience at the best dental clinic in Valanchery. Highly recommended!" },
+                { name: "Mohammed Riyaz", review: "Very professional dental care and friendly staff. Completely satisfied with the service!" },
+                { name: "Zainab Ali", review: "Amazing care, advanced treatments, and great results. The team is highly skilled!" },
+                { name: "Imran Ahmed", review: "Top-notch dental clinic in Valanchery with a clean space and skilled professionals." },
+                { name: "Safiya K.", review: "Received excellent dental treatment and caring staff. Highly recommended for all dental needs!" },
+                { name: "Lakshmi Menon", review: "Premium Dental Studio in Valanchery exceeded expectations. Dr. Kasim offers expert care." },
+                { name: "Riyas Puthur", review: "Smooth dental procedure with excellent results. Great focus on comfort and quality care!" },
+                { name: "Divya Rajan", review: "Had an excellent experience here! Highly recommended for advanced dental care services." },
             ],
+
             filterdData: []
         };
     },

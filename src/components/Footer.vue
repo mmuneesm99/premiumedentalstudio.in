@@ -29,12 +29,12 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
                     <span class="flex items-center justify-center gap-3 text-sm md:text-base">Premium Dental Studio</span>
                     <div class="flex gap-2">
-                        <span class="flex items-center">
-                            <i class='bx bxl-facebook text-lg'></i>
+                        <span class="flex items-center text-sm md:text-lg">
+                            <i class='bx bxl-faceboo'></i>
                             <a href="https://www.facebook.com/profile.php?id=61565136377015&mibextid=LQQJ4d" class="underline">facebook</a>
                         </span>
-                        <span class="flex items-center">
-                            <i class='bx bxl-instagram text-lg'></i>
+                        <span class="flex items-center text-sm md:text-lg">
+                            <i class='bx bxl-instagram'></i>
                             <a href="https://www.instagram.com/premium_dentalstudio?igsh=bXBsZjF4b3VycWhl" class="underline">instagram</a>
                         </span>
                     </div>
