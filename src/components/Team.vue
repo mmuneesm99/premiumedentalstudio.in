@@ -66,11 +66,11 @@ export default {
             baseUrl: 'https://mmuneesm99.github.io/imagecloude/',
             doctors: [
                 { name: "Dr. SUHA SUNAYYA K.F", image: "doctor1.avif", qualification: "BDS", specialty: "[RESIDENT DENTAL SURGEON], AESTHETIC DENTIST" },
-                { name: "Dr. SIJI CHIRAMEL", image: "doctor2.avif", qualification: "BDS, MDS", specialty: "[CONSULTANT MAXILLOFACIAL SURGEON]  Prof. and H. O. D Dept. of DENTISTRY AND  MAXILLOFACIAL SURGERY. AMALA INSTITUTE OF  MEDICAL SCIENCE" },
+                { name: "Dr. SIJI CHIRAMEL", image: "doctor2.avif", qualification: "BDS, MDS, MFDRCS(IRELAND), FIBOI(USA)", specialty: "[CONSULTANT & MAXILLOFACIAL SURGEON & ORAL IMPLANTOLAGIST]  Prof. and H. O. D Dept. of DENTISTRY AND  MAXILLOFACIAL SURGERY. AMALA INSTITUTE OF  MEDICAL SCIENCE" },
                 { name: "Dr. MOHAMMED ASLIF", image: "doctor3.avif", qualification: "BDS, MDS", specialty: "[CONSULTANT ORAL AND MAXILLOFACIAL SURGEON, IMPLANTOLOGIST]" },
                 { name: "Dr. SHAHANA VP", image: "doctor4.avif", qualification: "BDS, MDS", specialty: "[CONSULTANT ORTHODONTIST AND DENTOFACIAL ORTHOPEDICIAN ]  Asst. Prof. MES Dental college" },
                 { name: "Dr. SALAHUDHEEN N", image: "doctor7.avif", qualification: "BDS, MDS", specialty: "[CONSULTANT ENDODONTIST]" },
-                { name: "Dr. SHAHNA N", image: "doctor6.avif", qualification: "BDS, MDS", specialty: "[CONSULTANT ENDODONTIST] Asst. Prof. EDUCARE INSTITUTE OF DENTAL SCIENCES" },
+                { name: "Dr. SHAHNA N", image: "doctor6.avif", qualification: "BDS, MDS", specialty: "[CONSULTANT PERIODONICS] Asst. Prof. EDUCARE INSTITUTE OF DENTAL SCIENCES" },
                 { name: "Dr. MOHAMED LABEEB K.P", image: "doctor5.avif", qualification: "BDS, MDS", specialty: "[CONSULTANT PEDODONTIST] Asst Prof. PK-DAS INSTITUTE OF MEDICAL SCIENCES" },
                 { name: "Dr. NITHIN PV ", image: "doctor8.avif", qualification: "BDS, MDS", specialty: "[CONSULTANT ENDODONTIST] Asst. Prof. EDUCARE INSTITUTE OF DENTAL SCIENCES" },
             ],
